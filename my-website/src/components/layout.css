@@ -1,0 +1,37 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: Segoe UI, sans-serif;
+    color: white;
+    background-image: linear-gradient(to bottom right, royalblue,#a528ff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    min-height: 100%;
+}
+
+section {
+    height: fit-content(100%);
+    position: sticky;
+    z-index: -1;
+}
+
+footer {
+    padding-top: 10%;
+    padding-bottom: 1%;
+}
+
+main {
+    overflow: hidden;
+    position: relative;
+    top: 15%;
+    padding-top: 10%;
+}
+
+article {
+    width: 70%;
+    position: sticky;
+    z-index: -1;
+}

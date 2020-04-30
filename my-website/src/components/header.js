@@ -1,36 +1,35 @@
 import React from "react"
-import "./header.css"
 import { Link } from "gatsby"
+
+import "./header.css"
 
 class Header extends React.Component {
     render() {
         return (
-        <header>
-            <div id="link-container">
+        <header className="header">
+            <div className="header-links">
                 <Link to="/"
                     activeStyle={{
                         color: `white`,
                         fontWeight: `bold`,
                         textDecoration: `none`,
+                        flexGrow: 2
                     }}>
                 Eddie Hatfield
                 </Link>  
+                <div>
+                    Projects
+                </div>
                 <Link to="/"
                     activeStyle={{
                         color: `white`,
                         textDecoration: `none`,
-                    }}>Projects</Link>
-                <Link to="/"
-                    activeStyle={{
-                        color: `white`,
-                        textDecoration: `none`,
-                        width: ``
                     }}>Contact</Link>
-                <Link href="https://github.com/deadbird11"
-                    activeStyle={{
+                <a href="https://github.com/deadbird11"
+                    style={{
                         color: `white`,
                         textDecoration: `none`,
-                    }}>Github</Link>
+                    }}>Github</a>
             </div>
         </header>
         );
