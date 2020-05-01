@@ -1,29 +1,24 @@
 .header {
     width: 100%;
     height: 6em;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, royalblue,#a528ff);
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28);
-}
-
-.header-links {
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    vertical-align: middle;
-    width: 75%;
-    height: 100%;
-}
-.header-links > * {
-    display: inline-block;
-    align-self: center;
-    flex-grow: 1;
-}
-
-#___gatsby {
     position: absolute;
     top: 0;
     left: 0;
+    background: transparent;
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 75%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.header-item {
+    color: white;
+    text-decoration: none;
+    flex-grow: 1;
 }

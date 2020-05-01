@@ -9,27 +9,25 @@ class Header extends React.Component {
         <header className="header">
             <div className="header-links">
                 <Link to="/"
-                    activeStyle={{
-                        color: `white`,
-                        fontWeight: `bold`,
-                        textDecoration: `none`,
-                        flexGrow: 2
-                    }}>
-                Eddie Hatfield
+                    style={{
+                        flexGrow: 2,
+                        fontWeight: `bold`
+                    }}
+                    className="header-item">
+                    Eddie Hatfield
                 </Link>  
-                <div>
+                <div className="header-item">
                     Projects
                 </div>
                 <Link to="/"
-                    activeStyle={{
-                        color: `white`,
-                        textDecoration: `none`,
-                    }}>Contact</Link>
+                    className="header-item">
+                    Contact
+                </Link>
                 <a href="https://github.com/deadbird11"
-                    style={{
-                        color: `white`,
-                        textDecoration: `none`,
-                    }}>Github</a>
+                   className="header-item"
+                   target="_blank">
+                       Github
+                </a>
             </div>
         </header>
         );
