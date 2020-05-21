@@ -11,11 +11,12 @@ class Header extends React.Component {
                 <Link to="/"
                     style={{
                         flexGrow: 2,
-                        fontWeight: `bold`
+                        fontWeight: `bold`,
                     }}
                     className="header-item">
-                    Eddie Hatfield
+                    <div style={{verticalAlign:`middle`,height:`100%`}}>Eddie Hatfield</div>
                 </Link>  
+                <div style={{flexGrow:2}}></div>
                 <div className="header-item">
                     Projects
                 </div>

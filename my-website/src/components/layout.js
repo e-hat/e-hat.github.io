@@ -1,23 +1,30 @@
 import React from "react"
 import Header from "../components/header"
-import SideNav from "../components/sidenav"
 import "../components/layout.css"
 
 
 class Layout extends React.Component {
     render() {
         return (
-            <div>
-                <Header />
-                <SideNav />
+            <div id="website">
+                <div id="header-wrapper">
+                    <header><h3>Eddie Hatfield</h3></header>
+                    <nav>
+                        <p>Projects</p>
+                        <p>
+                            <a href="https://github.com/deadbird11"
+                                className="header-item"
+                                target="_blank">
+                            Github
+                        </a>
+                        </p>
+                        <p>Resume</p>
+                        <p>Contact</p>
+                    </nav>
+                </div>
                 <main>
                     {this.props.children}
                 </main>
-                <footer style={{textAlign:`center`}}>
-                    © {new Date().getFullYear()}, Built with
-                    {` `}
-                    <a style={{color:`white`}} href="https://www.gatsbyjs.org">Gatsby</a>
-                </footer>
             </div>
         )
     }

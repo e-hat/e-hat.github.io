@@ -1,6 +1,10 @@
 html {
-    min-height: 100%;
+    height: 100%;
     overflow-y: scroll;
+}
+
+.themed {
+    background-image: linear-gradient(to bottom right, royalblue,#a528ff);
 }
 
 body {
@@ -13,20 +17,39 @@ body {
     min-height: 100%;
 }
 
-section {
-    height: fit-content(100%);
+#website {
+    display: flex;
+    flex-direction: column;
 }
 
-footer {
-    padding-top: 10%;
-    padding-bottom: 1%;
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+nav {
+    display: flex;
+    width: 45%;
+    margin-right: 5%;
+    height: 100%;
+}
+
+nav > p {
+    flex: 1;
+    margin: 0;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    width: 30%;
 }
 
 main {
-    overflow: hidden;
-    padding-top: 8%;    
-}
-
-article {
-    width: 70%;
+    width: 65%;
+    height: 100%;
+    margin: auto;
 }
