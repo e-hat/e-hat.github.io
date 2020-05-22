@@ -30,17 +30,29 @@ body {
     margin-bottom: 1%;
 }
 
+.header-link {
+    text-decoration: none;
+    color: white;
+}
+
 nav {
     display: flex;
     width: 45%;
     margin-right: 5%;
     height: 100%;
+    justify-content: space-evenly;
 }
 
-nav > p {
+nav > * {
     flex: 1;
     margin: 0;
     height: 100%;
+}
+
+
+.nav-link {
+    color: white;
+    text-decoration: none;
 }
 
 header {
@@ -52,4 +64,23 @@ main {
     width: 65%;
     height: 100%;
     margin: auto;
+}
+
+@media only screen and (max-width: 575px) {
+    #header-wrapper {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+        width: 80%;
+    }
 }

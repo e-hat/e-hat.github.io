@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "../components/header"
+import { Link } from "gatsby"
 import "../components/layout.css"
 
 
@@ -8,13 +8,18 @@ class Layout extends React.Component {
         return (
             <div id="website">
                 <div id="header-wrapper">
-                    <header><h3>Eddie Hatfield</h3></header>
+                    <header>
+                        <Link to="/" className="header-link">
+                        <h3>Eddie Hatfield</h3>
+                        </Link>
+                    </header>
                     <nav>
-                        <p>Projects</p>
+                        <Link to="/projects" className="header-link">Projects</Link>
                         <p>
                             <a href="https://github.com/deadbird11"
-                                className="header-item"
-                                target="_blank">
+                                className="nav-link"
+                                target="_blank"
+                                rel="noopener noreferrer">
                             Github
                         </a>
                         </p>
