@@ -1,0 +1,14 @@
+.card {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 5px;
+    width: 240px;
+}
+
+.card > h3 {
+    text-align: center;
+}
+
+.card > div {
+    text-overflow: ellipsis;
+}
