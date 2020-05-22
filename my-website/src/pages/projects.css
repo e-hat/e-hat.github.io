@@ -1,0 +1,13 @@
+h2 {
+    text-align: center;
+    margin: auto;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-item {
+    width: 30%;
+}
