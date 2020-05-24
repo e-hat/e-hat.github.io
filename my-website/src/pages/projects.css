@@ -1,11 +1,17 @@
 h2 {
     text-align: center;
     margin: auto;
+    padding-bottom: 12px;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0px;
 }
 
 .list-item {

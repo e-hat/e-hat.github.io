@@ -9,29 +9,31 @@ class ProjectsPage extends React.Component {
     cardInfoList = [
         {
             title: 'Title1',
-            text: 'BLAH BLAH LDKJFLJ;AJ;LFJALD;SJFD;JAF;LSAJ;LFDJL;AJFL;AJL;DSJF;LAJL;DSFJA;LKSDJFL;AJL;KDSJF;LAJDFJAJDFJALJDFAD FADFAJDFLJADJF;LADJFSD',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
         },
         {
             title: 'Title1',
-            text: 'BLAH BLAH LDKJFLJ;AJ;LFJALD;SJFD;JAF;LSAJ;LFDJL;AJFL;AJL;DSJF;LAJL;DSFJA;LKSDJFL;AJL;KDSJF;LAJDFJAJDFJALJDFAD FADFAJDFLJADJF;LADJFSD',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
         },
         {
             title: 'Title1',
-            text: 'BLAH BLAH LDKJFLJ;AJ;LFJALD;SJFD;JAF;LSAJ;LFDJL;AJFL;AJL;DSJF;LAJL;DSFJA;LKSDJFL;AJL;KDSJF;LAJDFJAJDFJALJDFAD FADFAJDFLJADJF;LADJFSD',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
         },
     ]
 
-    render() {
-        const cards = this.cardInfoList.map((cardInfo) => 
+    cards = this.cardInfoList.map((cardInfo) => 
             <ProjectCard title={cardInfo.title}
                          info ={cardInfo.text} 
                          className="list-item" />
-        )
+    )
+
+    render() {
+        
         return (
             <div>
                 <h2>Projects</h2>
                 <section>
-                    <ul>{cards}</ul>
+                    <ul>{this.cards}</ul>
                 </section>
             </div>
         )
