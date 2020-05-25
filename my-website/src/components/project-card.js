@@ -7,7 +7,7 @@ class ProjectCard extends React.Component {
         return (
             <div class="card">
                 <div class="card-content">
-                    <img src="../../img/going_dynamic-SO.png" alt="" width="500" height="500"></img>
+                    {this.props.img}
                     <h3>{this.props.title}</h3>
                     <div style={{
                         textOverflow: `ellipses`,
