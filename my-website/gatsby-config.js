@@ -6,14 +6,17 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Eddie Hatfield`,
+  },
   plugins: [
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        path: `${__dirname}\\static`,
+        name: `static`
       },
     },
   ]
