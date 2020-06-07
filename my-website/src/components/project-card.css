@@ -1,21 +1,69 @@
 .card {
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 5px 2px 15px #555555;
-    margin: 10px;
+    margin: auto;
+    padding: 0px;
     width: 240px;
     height: 250px;
-    padding: 0px;
+    position: relative;
+}
+
+.overlay {
+    width: 260px;
+    height: 270px;
+    position: absolute;
+    left: -5px;
+    z-index: 2;
+    background-color: lightgrey;
+    opacity: 0;
+    border-radius: 10px;
+    transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.overlay:hover {
+    visibility: visible;
+    opacity: 0.1;
+}
+
+.background-circle {
+    border: 2px solid white;
+    border-radius: 120px;
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    left: 12.5px;
+    top: 12.5px;
+    z-index: -1;
 }
 
 .card-content {
-    padding: 10px;
-}
-
-.card-content > h3 {
     text-align: center;
+    position: relative;
 }
 
-.card-content > div {
+.card-title {
+    padding-bottom: 0;
+}
+
+.card-text {
     text-overflow: ellipsis;
+    width: 170px;
+    position: absolute;
+    left: 70px;
+    top: 75px;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 2px;
+    z-index: 0;
+}
+
+.photo {
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    width: 180px;
+    height: 80px;
+    z-index: -1;
+}
+
+.gatsby-image-wrapper {
+    border-radius: 10px 10px 10px 10px;
 }
