@@ -24,7 +24,7 @@ class Layout extends React.Component {
                         </a>
                         </p>
                         <p>Resume</p>
-                        <p>Contact</p>
+                        <Link to="/contact" className="header-link">Contact</Link>
                     </nav>
                 </div>
                 <main>
