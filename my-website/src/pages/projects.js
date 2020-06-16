@@ -7,24 +7,27 @@ import ProjectCard from "../components/project-card"
 
 import "./projects.css"
 
-const CARD_W = 240;
-const CARD_H = 250;
-
 class ProjectsPage extends React.Component 
 {
     render() {
         const cardInfoList = [
             {
                 title: 'tldr',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+                text: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
+                img: <Img fixed={this.props.data.first.childImageSharp.fixed} />,
+                href: "https://github.com/deadbird11/tldr"
+            },
+            {
+                title: 'SGA',
+                text: 'SGA (Simple Genetic Algorithm) is a genetic algorithm written in C++ that is entirely customizable.',
+                img: <Img fixed={this.props.data.second.childImageSharp.fixed} />,
+                href: "https://github.com/deadbird11/SGA"
             },
             {
                 title: 'Title1',
                 text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-            },
-            {
-                title: 'Title1',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+                img: <Img fixed={this.props.data.first.childImageSharp.fixed} />,
+                href: "https://github.com/deadbird11/tldr"
             },
         ]
 
@@ -32,14 +35,15 @@ class ProjectsPage extends React.Component
             <ProjectCard title={cardInfo.title}
                          info={cardInfo.text} 
                          className="list-item"
-                         img={<Img fixed={this.props.data.file.childImageSharp.fixed} />}
+                         img={cardInfo.img}
+                         href={cardInfo.href}
                          />
         )
 
         return (
             <Layout>
                 <div><i></i></div>
-                <h2>Projects</h2>
+                <h2 style={{paddingTop: `5px`, paddingBottom: `20px`}}>Projects</h2>
                 <section>
                     <ul>{cards}</ul>
                 </section>
@@ -53,12 +57,19 @@ export default ProjectsPage
 
 export const query = graphql`
 query {
-    file(sourceInstanceName: {eq: "static"}, name: {eq: "tldr_card"}) {
+    first: file(sourceInstanceName: {eq: "static"}, name: {eq: "tldr_card"}) {
       childImageSharp {
         fixed(width:180,height:80) {
           ...GatsbyImageSharpFixed
         }
       }
-    }
+    },
+    second: file(sourceInstanceName: {eq: "static"}, name: {eq: "evolution"}) {
+        childImageSharp {
+          fixed(width:180,height:80) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
   }
 `
