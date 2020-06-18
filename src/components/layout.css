@@ -1,6 +1,7 @@
 html {
     height: 100%;
     overflow-y: scroll;
+    overscroll-behavior: none;
 }
 
 .themed {
@@ -8,13 +9,14 @@ html {
 }
 
 body {
-    font-family: Segoe UI, sans-serif;
+    font-family: Noto Sans JP, sans-serif;
     color: white;
     background-image: linear-gradient(to bottom right, royalblue,#a528ff);
     background-repeat: no-repeat;
     background-attachment: fixed;
     
     min-height: 100%;
+    overscroll-behavior: none;
 }
 
 #website {
