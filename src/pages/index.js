@@ -24,7 +24,7 @@ class IndexPage extends React.Component {
                       fixed={this.props.data.file.childImageSharp.fixed} 
                     />
                   </figure>
-                  My name is Eddie Hatfield. I'm a sophomore at Tufts University who loves playing piano, tennis, doing and learning math, and programming. More specifically, I'm interested in game engine design, graphics, machine learning, and a couple other topics.
+                  My name is Eddie Hatfield. Ever since 8th grade, I've been interested in any programming I can get access to. 
                 </article>
             </section>
           </Layout>
