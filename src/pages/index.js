@@ -15,16 +15,22 @@ class IndexPage extends React.Component {
             <section>
                 <p className="profile-title">Welcome</p>
                 <article className="profile">
-                  <figure>
+                  <div className="profile-pic">
                     <Img style={{
-                      borderRadius: `100px`,
+                      borderRadius: `110px`,
                       float: `right`,
                       border: `2px solid white`,
+                      boxShadow: `0px 5px 12px #555555`,
                       }} 
                       fixed={this.props.data.file.childImageSharp.fixed} 
                     />
-                  </figure>
-                  My name is Eddie Hatfield. Ever since 8th grade, I've been interested in any programming I can get access to. 
+                    <div className="bio themed">
+                      <div className="bio-text">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                      </div>
+                  </div>
+                  </div>
+                  
                 </article>
             </section>
           </Layout>
@@ -37,9 +43,9 @@ export default IndexPage
 
 export const query = graphql`
 query {
-    file(sourceInstanceName: {eq: "static"}, name: {eq: "tldr_card"}) {
+    file(sourceInstanceName: {eq: "static"}, name: {eq: "prof_pic"}) {
         childImageSharp {
-          fixed(width:200,height:200) {
+          fixed(width:220,height:220) {
             ...GatsbyImageSharpFixed
           }
         }

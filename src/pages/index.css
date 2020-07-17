@@ -1,9 +1,38 @@
 .profile {
     width: 60%;
     margin: auto;
+    display: flex;
 }
 
 .profile-title {
     text-align: center;
     font-size: 2.3em;
+}
+
+.profile-pic {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 0;
+}
+
+.bio {
+    height: 220px;
+    border: 2px solid white;
+    width: 160%;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    border-left: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    z-index: -1;
+}
+
+.bio-text {
+    margin-left: 40%;
+    padding: 8px;
 }
