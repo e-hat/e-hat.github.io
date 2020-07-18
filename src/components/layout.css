@@ -68,7 +68,7 @@ main {
     margin: auto;
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 768px) {
     #header-wrapper {
         flex-direction: column;
     }
