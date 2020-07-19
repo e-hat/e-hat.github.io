@@ -10,32 +10,30 @@ class ContactPage extends React.Component {
                 <section className="form-content">
                     <h1 className="contact-title">Send me an email</h1>
                     <form method="post" action="#">
-                        <label className="label">
-                            Name
-                        <br />
+                        <label>
+                            <div className="input-label">Name</div>
                         <input type="text" name="name" id="name" className="form-input"/>
                         </label>
                         <br />
                         <label>
-                            Email
-                        <br />
+                            <div className="input-label">Email</div>
                         <input type="email" name="email" id="email" className="form-input"/>
                         </label>
                         <br />
                         <label>
-                            Subject
-                        <br />
+                            <div className="input-label">Subject</div>
                         <input type="text" name="subject" id="subject" className="form-input"/>
                         </label>
                         <br />
                         <label>
-                            Message
-                        <br />
+                            <div className="input-label">Message</div>
                         <textarea name="message" id="message" rows="5" className="form-input"/>
                         </label>
                         <br />
-                        <button type="submit" id="submit" className="submit form-button">Send</button>
-                        <input type="reset" value="Clear" className="form-button"/>
+                        <div className="button-container">
+                            <button type="submit" id="submit" className="submit form-button">Send</button>
+                            <input type="reset" value="Clear" className="form-button"/>
+                        </div>
                     </form>
                 </section>
             </Layout>
