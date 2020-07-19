@@ -46,8 +46,8 @@ class ContactPage extends React.Component {
                                                     <><button type="submit" name="submit" className="form-button submit">Send</button>
                                                     <input type="reset" value="Clear" className="form-button"/></>}
                             {status === "ERROR" && <p className="result-msg">Ooops! There was an error.</p>}
-                            
                         </div>
+                        <input name="_gotcha" type="text" style={{display: `none`}} />
                     </form>
                 </section>
             </Layout>
