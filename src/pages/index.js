@@ -25,8 +25,9 @@ class IndexPage extends React.Component {
                       fixed={this.props.data.file.childImageSharp.fixed} 
                     />
                     <div className="bio themed">
-                      <div className="bio-text">
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+                      <div className="bio-text">djlka;jflkdaj
+                        hELLO wLOOOLS
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu BLAH BLAH BLAH BLAH ABLHA BLHALAHLJSLKJD
                       </div>
                   </div>
                   </div>
@@ -37,7 +38,6 @@ class IndexPage extends React.Component {
         )
     }
 }
-
 
 export default IndexPage
 

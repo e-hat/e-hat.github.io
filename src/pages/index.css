@@ -48,11 +48,12 @@
 
     .bio {
         width: 220px;
-        height: 150%;
+        height: auto;
         left: -4px;
         top: 110px;
         border: 2px solid white;
         border-bottom-left-radius: 10px;
+        margin-bottom: 10%;
     }
 
     .bio-text {
