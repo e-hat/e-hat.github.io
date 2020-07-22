@@ -1,10 +1,18 @@
 .card {
-    margin: 20px;
+    margin: auto;
+    margin: 10px auto 10px;
     width: 240px;
-    height: 250px;
+    height: auto;
+    min-height: 255px;
     position: relative;
     text-align: center;
     display: inline-block;
+}
+
+.card-content:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .overlay {
@@ -50,13 +58,14 @@
 .card-text {
     text-overflow: ellipsis;
     width: 180px;
-    position: absolute;
-    left: 70px;
-    top: 80px;
     border-radius: 10px;
     border: 2px solid white;
     padding: 5px;
     z-index: 0;
+    float: right;
+    margin-left: 70px;
+    margin-top: 80px;
+
 }
 
 .photo {
