@@ -1,5 +1,5 @@
 .profile {
-    width: 472px;
+    width: 512px;
     margin: auto;
     display: flex;
 }
@@ -21,10 +21,10 @@
 .bio {
     height: 220px;
     border: 2px solid white;
-    width: 360px;
+    width: 400px;
     border-radius: 10px;
     position: absolute;
-    left: 50%;
+    left: 45%;
     overflow: hidden;
     border-left: 0px;
     border-bottom-left-radius: 0px;
