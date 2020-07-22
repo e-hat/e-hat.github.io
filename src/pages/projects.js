@@ -13,31 +13,26 @@ class ProjectsPage extends React.Component
         const cardInfoList = [
             {
                 title: 'tldr',
-                text: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
+                info: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
                 img: <Img fixed={this.props.data.first.childImageSharp.fixed} />,
-                href: "https://github.com/deadbird11/tldr"
+                href: "https://github.com/deadbird11/tldr",
             },
             {
                 title: 'SGA',
-                text: 'SGA (Simple Genetic Algorithm) is a genetic algorithm written in C++ that is entirely customizable.',
+                info: 'SGA (Simple Genetic Algorithm) is a genetic algorithm written in C++ that is entirely customizable.',
                 img: <Img fixed={this.props.data.second.childImageSharp.fixed} />,
-                href: "https://github.com/deadbird11/SGA"
+                href: "https://github.com/deadbird11/SGA",
             },
             {
                 title: 'Title1',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+                info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
                 img: <Img fixed={this.props.data.first.childImageSharp.fixed} />,
-                href: "https://github.com/deadbird11/tldr"
+                href: "https://github.com/deadbird11/tldr",
             },
         ]
 
         const cards = cardInfoList.map((cardInfo) => 
-            <ProjectCard title={cardInfo.title}
-                         info={cardInfo.text} 
-                         className="list-item"
-                         img={cardInfo.img}
-                         href={cardInfo.href}
-                         />
+            <ProjectCard className="list-item" {...cardInfo} />
         )
 
         return (

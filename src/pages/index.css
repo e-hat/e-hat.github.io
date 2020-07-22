@@ -1,0 +1,64 @@
+.profile {
+    width: 472px;
+    margin: auto;
+    display: flex;
+}
+
+.profile-title {
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.profile-pic {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding: 0px;
+    margin: 0px;
+    z-index: 0;
+}
+
+.bio {
+    height: 220px;
+    border: 2px solid white;
+    width: 360px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    border-left: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    z-index: -1;
+    margin: auto;
+}
+
+.bio-text {
+    margin-left: 37.5%;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 512px) {
+
+    .profile {
+        width: 220px;
+        height: 472px;
+        flex-direction: column;
+    }
+
+    .bio {
+        width: 220px;
+        height: auto;
+        left: -4px;
+        top: 110px;
+        border: 2px solid white;
+        border-bottom-left-radius: 10px;
+        margin-bottom: 10%;
+    }
+
+    .bio-text {
+        margin-left: auto;
+        margin-top: 55%;
+        padding: 8px;
+    }
+}
