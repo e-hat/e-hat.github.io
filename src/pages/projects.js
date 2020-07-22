@@ -10,40 +10,58 @@ import "./projects.css"
 class ProjectsPage extends React.Component 
 {
     render() {
-        const cardInfoList = [
-            {
-                title: 'tldr',
-                info: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
-                img: <Img fixed={this.props.data.first.childImageSharp.fixed} />,
-                href: "https://github.com/deadbird11/tldr",
-            },
-            {
-                title: 'SGA',
-                info: 'SGA (Simple Genetic Algorithm) is a genetic algorithm written in C++ that is entirely customizable.',
-                img: <Img fixed={this.props.data.second.childImageSharp.fixed} />,
-                href: "https://github.com/deadbird11/SGA",
-            },
-            {
-                title: 'Title1',
-                info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-                img: <Img fixed={this.props.data.first.childImageSharp.fixed} />,
-                href: "https://github.com/deadbird11/tldr",
-            },
-        ]
 
-        const cards = cardInfoList.map((cardInfo) => 
-            <ProjectCard className="list-item" {...cardInfo} />
-        )
+      let getImg = (name) => {
+        return <Img fixed={this.props.data[name].childImageSharp.fixed} />
+      }
 
-        return (
-            <Layout>
-                <div><i></i></div>
-                <h2 style={{paddingTop: `5px`, paddingBottom: `20px`}}>Projects</h2>
-                <section>
-                    <ul>{cards}</ul>
-                </section>
-            </Layout>
-        )
+      const cardInfoList = [
+          {
+            title: 'tldr',
+            info: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
+            img: getImg('tldr'),
+            href: "https://github.com/deadbird11/tldr",
+          },
+          {
+            title: 'SGA',
+            info: 'SGA (Simple Genetic Algorithm) is a genetic algorithm written in C++ that is entirely customizable.',
+            img: getImg('sga'),
+            href: "https://github.com/deadbird11/SGA",
+          },
+          {
+            title: 'scramble',
+            info: 'Command line tool written in Go for generating anagrams of a given word.',
+            img: getImg('scramble'),
+            href: "https://github.com/deadbird11/scramble",
+          },
+          {
+            title: 'efgl',
+            info: 'An abstraction of OpenGL with some useful features to reduce the overhead of experimenting with different rendering techniques.',
+            img: getImg('scramble'),
+            href: "https://github.com/deadbird11/efgl",
+          },
+          {
+            title: 'JumboEngine',
+            info: 'Game engine based on series by The Cherno on YouTube that will eventually feature a rendering engine of my own design.',
+            img: getImg('scramble'),
+            href: "https://github.com/deadbird11/JumboEngine",
+          },
+          
+      ]
+
+      const cards = cardInfoList.map((cardInfo) => 
+          <ProjectCard className="list-item" {...cardInfo} />
+      )
+
+      return (
+          <Layout>
+              <div><i></i></div>
+              <h2 style={{paddingTop: `5px`, paddingBottom: `20px`}}>Projects</h2>
+              <section>
+                  <ul>{cards}</ul>
+              </section>
+          </Layout>
+      )
     }
 }
 
@@ -52,19 +70,26 @@ export default ProjectsPage
 
 export const query = graphql`
 query {
-    first: file(sourceInstanceName: {eq: "static"}, name: {eq: "tldr_card"}) {
+    tldr: file(sourceInstanceName: {eq: "static"}, name: {eq: "tldr_card"}) {
       childImageSharp {
         fixed(width:180,height:80) {
           ...GatsbyImageSharpFixed
         }
       }
     },
-    second: file(sourceInstanceName: {eq: "static"}, name: {eq: "evolution"}) {
-        childImageSharp {
-          fixed(width:180,height:80) {
-            ...GatsbyImageSharpFixed
-          }
+    sga: file(sourceInstanceName: {eq: "static"}, name: {eq: "evolution"}) {
+      childImageSharp {
+        fixed(width:180,height:80) {
+          ...GatsbyImageSharpFixed
         }
       }
+    },
+    scramble: file(sourceInstanceName: {eq: "static"}, name: {eq: "scramble"}) {
+      childImageSharp {
+        fixed(width:180, height:80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
   }
 `
