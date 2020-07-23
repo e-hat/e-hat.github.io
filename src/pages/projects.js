@@ -37,16 +37,21 @@ class ProjectsPage extends React.Component
           {
             title: 'efgl',
             info: 'An abstraction of OpenGL with some useful features to reduce the overhead of experimenting with different rendering techniques.',
-            img: getImg('scramble'),
+            img: getImg('efgl'),
             href: "https://github.com/deadbird11/efgl",
           },
           {
             title: 'JumboEngine',
             info: 'Game engine based on series by The Cherno on YouTube that will eventually feature a rendering engine of my own design.',
-            img: getImg('scramble'),
+            img: getImg('JumboEngine'),
             href: "https://github.com/deadbird11/JumboEngine",
           },
-          
+          {
+            title: 'Cycloid Animation',
+            info: 'A fun animation that I created a couple years ago using p5.js. Feel free to play with the slider and see what happens!',
+            img: getImg('CycloidAnim'),
+            href: "https://editor.p5js.org/deadbird/present/-1TmeUp-Q"
+          }
       ]
 
       const cards = cardInfoList.map((cardInfo) => 
@@ -55,7 +60,7 @@ class ProjectsPage extends React.Component
 
       return (
           <Layout>
-              <h2 style={{paddingTop: `5px`, paddingBottom: `0px`}}>Projects</h2>
+              <h2 style={{paddingTop: `5px`, paddingBottom: `10px`}}>Projects</h2>
               <section>
                   <ul>{cards}</ul>
               </section>
@@ -89,6 +94,27 @@ query {
           ...GatsbyImageSharpFixed
         }
       }
-    }
+    },
+    efgl: file(sourceInstanceName: {eq: "static"}, name: {eq: "efgl"}) {
+      childImageSharp {
+        fixed(width:180, height:80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
+    JumboEngine: file(sourceInstanceName: {eq: "static"}, name: {eq: "JumboEngine"}) {
+      childImageSharp {
+        fixed(width:180, height:80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
+    CycloidAnim: file(sourceInstanceName: {eq: "static"}, name: {eq: "CycloidAnim"}) {
+      childImageSharp {
+        fixed(width:180, height:80) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    },
   }
 `
