@@ -16,23 +16,18 @@ class ProjectsPage extends React.Component
       }
 
       const cardInfoList = [
+          
           {
-            title: 'tldr',
-            info: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
-            img: getImg('tldr'),
-            href: "https://github.com/deadbird11/tldr",
+            title: 'Cycloid Animation',
+            info: 'A fun animation that I created a couple years ago using p5.js. Feel free to play with the slider and see what happens!',
+            img: getImg('CycloidAnim'),
+            href: "https://editor.p5js.org/deadbird/present/-1TmeUp-Q"
           },
           {
             title: 'SGA',
             info: 'SGA (Simple Genetic Algorithm) is a genetic algorithm written in C++ that is entirely customizable.',
             img: getImg('sga'),
             href: "https://github.com/deadbird11/SGA",
-          },
-          {
-            title: 'scramble',
-            info: 'Command line tool written in Go for generating anagrams of a given word.',
-            img: getImg('scramble'),
-            href: "https://github.com/deadbird11/scramble",
           },
           {
             title: 'efgl',
@@ -47,11 +42,19 @@ class ProjectsPage extends React.Component
             href: "https://github.com/deadbird11/JumboEngine",
           },
           {
-            title: 'Cycloid Animation',
-            info: 'A fun animation that I created a couple years ago using p5.js. Feel free to play with the slider and see what happens!',
-            img: getImg('CycloidAnim'),
-            href: "https://editor.p5js.org/deadbird/present/-1TmeUp-Q"
-          }
+            title: 'scramble',
+            info: 'Command line tool written in Go for generating anagrams of a given word.',
+            img: getImg('scramble'),
+            href: "https://github.com/deadbird11/scramble",
+          },
+          {
+            title: 'tldr',
+            info: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
+            img: getImg('tldr'),
+            href: "https://github.com/deadbird11/tldr",
+          },
+          
+          
       ]
 
       const cards = cardInfoList.map((cardInfo) => 
