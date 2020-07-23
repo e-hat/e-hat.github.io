@@ -55,8 +55,7 @@ class ProjectsPage extends React.Component
 
       return (
           <Layout>
-              <div><i></i></div>
-              <h2 style={{paddingTop: `5px`, paddingBottom: `20px`}}>Projects</h2>
+              <h2 style={{paddingTop: `5px`, paddingBottom: `0px`}}>Projects</h2>
               <section>
                   <ul>{cards}</ul>
               </section>
