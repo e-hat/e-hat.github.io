@@ -9,12 +9,12 @@ class Layout extends React.Component {
             <div id="website">
                 <div id="header-wrapper">
                     <header>
-                        <Link to="/" className="header-link">
+                        <Link to="/" className="normalized-link">
                         <h3>Eddie Hatfield</h3>
                         </Link>
                     </header>
                     <nav>
-                        <Link to="/projects" className="header-link">Projects</Link>
+                        <Link to="/projects" className="normalized-link">Projects</Link>
                         <p>
                             <a href="https://github.com/deadbird11"
                                 className="nav-link"
@@ -24,7 +24,7 @@ class Layout extends React.Component {
                         </a>
                         </p>
                         <p>Resume</p>
-                        <Link to="/contact" className="header-link">Contact</Link>
+                        <Link to="/contact" className="normalized-link">Contact</Link>
                     </nav>
                 </div>
                 <main>

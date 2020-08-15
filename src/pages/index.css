@@ -1,7 +1,7 @@
 .profile {
-    width: 512px;
+    width: 60%;
     margin: auto;
-    display: flex;
+    text-align: center;
 }
 
 .profile-title {
@@ -10,55 +10,18 @@
 }
 
 .profile-pic {
-    position: relative;
-    left: 0px;
-    top: 0px;
-    padding: 0px;
-    margin: 0px;
-    z-index: 0;
-}
-
-.bio {
-    height: 220px;
-    border: 2px solid white;
-    width: 400px;
-    border-radius: 10px;
-    position: absolute;
-    left: 45%;
-    overflow: hidden;
-    border-left: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
-    z-index: -1;
-    margin: auto;
 }
 
 .bio-text {
-    margin-left: 37.5%;
-    padding: 8px;
+    font-size: 1.25em;
 }
 
 @media only screen and (max-width: 512px) {
-
     .profile {
-        width: 220px;
-        height: 472px;
-        flex-direction: column;
+        width: 90%;
     }
 
-    .bio {
-        width: 220px;
-        height: auto;
-        left: -4px;
-        top: 110px;
-        border: 2px solid white;
-        border-bottom-left-radius: 10px;
-        margin-bottom: 10%;
-    }
-
-    .bio-text {
-        margin-left: auto;
-        margin-top: 55%;
-        padding: 8px;
+    .profile-title {
+        margin-bottom: 10px;
     }
 }

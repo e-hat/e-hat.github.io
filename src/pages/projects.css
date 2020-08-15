@@ -9,7 +9,12 @@ ul {
     flex-wrap: wrap;
     text-align: center;
     margin: auto;
-    align-items: center;
-    justify-content: space-between;
+    align-items: top;
+    justify-content: space-evenly;
     padding-inline-start: 0px;
+    text-align: center;
+}
+
+li {
+    margin: auto;
 }

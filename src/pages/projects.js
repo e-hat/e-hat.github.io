@@ -12,7 +12,7 @@ class ProjectsPage extends React.Component
     render() {
 
       let getImg = (name) => {
-        return <Img fixed={this.props.data[name].childImageSharp.fixed} />
+        return <Img fixed={this.props.data[name].childImageSharp.fixed} style={{borderRadius: `10px`}}/>
       }
 
       const cardInfoList = [
@@ -79,42 +79,42 @@ export const query = graphql`
 query {
     tldr: file(sourceInstanceName: {eq: "static"}, name: {eq: "tldr_card"}) {
       childImageSharp {
-        fixed(width:180,height:80) {
+        fixed(width:220,height:80) {
           ...GatsbyImageSharpFixed
         }
       }
     },
     sga: file(sourceInstanceName: {eq: "static"}, name: {eq: "evolution"}) {
       childImageSharp {
-        fixed(width:180,height:80) {
+        fixed(width:220,height:80) {
           ...GatsbyImageSharpFixed
         }
       }
     },
     scramble: file(sourceInstanceName: {eq: "static"}, name: {eq: "scramble"}) {
       childImageSharp {
-        fixed(width:180, height:80) {
+        fixed(width:220, height:80) {
           ...GatsbyImageSharpFixed
         }
       }
     },
     efgl: file(sourceInstanceName: {eq: "static"}, name: {eq: "efgl"}) {
       childImageSharp {
-        fixed(width:180, height:80) {
+        fixed(width:220, height:80) {
           ...GatsbyImageSharpFixed
         }
       }
     },
     JumboEngine: file(sourceInstanceName: {eq: "static"}, name: {eq: "JumboEngine"}) {
       childImageSharp {
-        fixed(width:180, height:80) {
+        fixed(width:220, height:80) {
           ...GatsbyImageSharpFixed
         }
       }
     },
     CycloidAnim: file(sourceInstanceName: {eq: "static"}, name: {eq: "CycloidAnim"}) {
       childImageSharp {
-        fixed(width:180, height:80) {
+        fixed(width:220, height:80) {
           ...GatsbyImageSharpFixed
         }
       }

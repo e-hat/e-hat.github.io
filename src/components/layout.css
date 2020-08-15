@@ -8,6 +8,10 @@ html {
     background-image: linear-gradient(to bottom right, #6600ff,#990099);
 }
 
+.rounded {
+    border-radius: 10px;
+}
+
 body {
     font-family: Noto Sans JP, sans-serif;
     color: white;
@@ -32,7 +36,7 @@ body {
     margin-bottom: 1%;
 }
 
-.header-link {
+.normalized-link {
     text-decoration: none;
     color: white;
 }

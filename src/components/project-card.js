@@ -5,16 +5,14 @@ import "../components/project-card.css"
 class ProjectCard extends React.Component {
     render() {
         return (
-            <div className="card">
-                <a href={this.props.href}>
-                <div className="overlay"></div>
-                </a>
+            <div className="card themed rounded">
+                <a href={this.props.href} className="project-link normalized-link">
                 <h2 className="card-title"><code>{this.props.title}</code></h2>
                 <div className="card-content">
-                    <div className="background-circle"></div>
-                    <div className="photo">{this.props.img}</div>
-                    <div className="card-text themed">{this.props.info}</div>
+                    <div className="photo rounded">{this.props.img}</div>
+                    <div className="card-text">{this.props.info}</div>
                 </div>
+                </a>
             </div>
         )
     }
