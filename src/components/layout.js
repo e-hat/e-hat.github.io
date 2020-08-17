@@ -23,7 +23,7 @@ class Layout extends React.Component {
                             Github
                         </a>
                         </p>
-                        <p>Resume</p>
+                        <a href={`resume.pdf`} download className="normalized-link">Resume</a>
                         <Link to="/contact" className="normalized-link">Contact</Link>
                     </nav>
                 </div>
