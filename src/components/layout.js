@@ -16,7 +16,7 @@ class Layout extends React.Component {
                     <nav>
                         <Link to="/projects" className="normalized-link">Projects</Link>
                         <p>
-                            <a href="https://github.com/deadbird11"
+                            <a href="https://github.com/e-hat"
                                 className="nav-link"
                                 target="_blank"
                                 rel="noopener noreferrer">
