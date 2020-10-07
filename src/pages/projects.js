@@ -27,31 +27,31 @@ class ProjectsPage extends React.Component
             title: 'SGA',
             info: 'SGA (Simple Genetic Algorithm) is a genetic algorithm written in C++ that is entirely customizable.',
             img: getImg('sga'),
-            href: "https://github.com/deadbird11/SGA",
+            href: "https://github.com/eddiehatf/SGA",
           },
           {
             title: 'efgl',
             info: 'An abstraction of OpenGL with some useful features to reduce the overhead of experimenting with different rendering techniques.',
             img: getImg('efgl'),
-            href: "https://github.com/deadbird11/efgl",
+            href: "https://github.com/eddiehatf/efgl",
           },
           {
             title: 'JumboEngine',
             info: 'Game engine based on series by The Cherno on YouTube that will eventually feature a rendering engine of my own design.',
             img: getImg('JumboEngine'),
-            href: "https://github.com/deadbird11/JumboEngine",
+            href: "https://github.com/eddiehatf/JumboEngine",
           },
           {
             title: 'scramble',
             info: 'Command line tool written in Go for generating anagrams of a given word.',
             img: getImg('scramble'),
-            href: "https://github.com/deadbird11/scramble",
+            href: "https://github.com/eddiehatf/scramble",
           },
           {
             title: 'tldr',
             info: 'A simple command line tool for retrieving concise explanations of other commands, written in Go.',
             img: getImg('tldr'),
-            href: "https://github.com/deadbird11/tldr",
+            href: "https://github.com/eddiehatf/tldr",
           },
           
           
