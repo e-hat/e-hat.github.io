@@ -1,19 +1,36 @@
 .profile {
-    width: 60%;
+    width: 50%;
     margin: auto;
     text-align: center;
 }
 
 .profile-title {
-    text-align: center;
-    font-size: 2.3em;
+    text-align: left;
+    font-size: 3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.profile-title > h1 {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    border-radius:6px;
+    background: #161f27;
+    padding: 2.5px 5px;
+    color: orange;
+    font-size: 1.5em;
+    margin-top: 10;
+    margin-bottom: 10;
 }
 
 .profile-pic {
 }
 
 .bio-text {
-    font-size: 1.25em;
+    font-size: 1em;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @media only screen and (max-width: 512px) {
@@ -24,4 +41,12 @@
     .profile-title {
         margin-bottom: 10px;
     }
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    text-align: left;
 }
