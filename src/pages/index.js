@@ -2,28 +2,58 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Layout from "../components/layout"
-//import Profile from "../components/profile"
+import "fontsource-noto-sans-jp"
 
 import "./index.css"
 
 function IndexPage(props) {
   return (
+    <div>
       <section>
           <article className="profile">
-          <p className="profile-title"><h1>Eddie Hatfield</h1></p>
-          <code className="section-title">about</code>
-          <p className="bio-text">I'm Eddie Hatfield. I'm originally from Cincinnati, Ohio ⚫🟠, but I'm usually in Boston⛄ since I'm an studying CompSci and Applied Math @ Tufts 🐘.  </p>
-          <p className="bio-text">I enjoy playing ping pong🏓, playing video games🕹️, meditating 🧘‍♂️, implementing real-time rendering techniques🖥️, and learning more about all things programming.</p>
-          <code className="section-title">projects</code>
-          <p className="bio-text">
-              Here are some of my favorite projects I've done over the years:
+            <h1 className="profile-title">eddie hatfield</h1>
+            <div className="image">
+              <Img 
+              style={{
+                marginBottom: `10px`,
+                margin: `auto`,
+              }}
+              imgStyle={{
+              }} fixed={props.data.file.childImageSharp.fixed} />
+            </div>
+            <div className="text-section">
+            <code className="section-title code">about</code>
+            <p className="bio-text">I'm Eddie Hatfield. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston⛄ for school.  </p>
+            <p className="bio-text">I enjoy playing ping pong🏓, playing video games🕹️, meditating 🧘‍♂️, obsessing over real-time rendering techniques🖥️, and learning more about all things programming.</p>
+            <p className="bio-text"> I'm currently a sophomore at Tufts studying CompSci and Applied Math 🐘 and I'm a student developer on <a href="https://www.jumbocode.org/">JumboCode</a>, where we make hi-tech websites for non-profits.</p>
+            <code className="section-title">resume/contact</code>
+            <p className="bio-text">My resume can be found <a href={`eddiehatfield_resume.pdf`} download >here</a>. You can reach me at edward.hatfield at tufts dot edu and I'm <a href="https://github.com/e-hat" >e-hat</a> on Github🐙.</p>
+            <code className="section-title">projects</code>
+            <p className="bio-text">
+                Here are some of my favorite projects I've worked on over the years:
+                <ul>
+                    <li><code>efgl</code> - A rendering engine written in <code>OpenGL</code> and <code>C++</code> that implements a clustered-forward pipeline with GPU compute. At the moment, I'm adding support for PBR. <a href="https://github.com/e-hat/efgl" >github</a></li>
+                    <li><code>sga</code> - A genetic algorithm framework that I wrote in modern <code>C++</code>. It allows the user to define their own genotypes, evaluation functions, crossover functions, and mutation functions and handles the actual algorithm on its own. <a href="https://github.com/e-hat/SGA">github</a></li>
+                    <li><code>cycloid-animation</code> - One day, I was messing around on desmos with <a href="https://en.wikipedia.org/wiki/Cycloid" >cycloid</a> graphs and I made an animation out of them that you can find <a href="https://editor.p5js.org/deadbird/present/-1TmeUp-Q">here</a>. Note the slider on the left - it changes the level of detail that the animation is drawn with, and results in a practically infinite number of different, beautiful animations!</li>
+                    <li><code>onewknd</code> - My implementation of the <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">ray-tracing in one weekend</a> tutorial (<a href="https://github.com/e-hat/onewknd">github</a>). I'm currently working on a rewrite in <code>scala</code> to flex my functional programming skills.</li>
+                    <li><code>mnist-gan</code> - One of my first forays into ML with <code>Tensorflow</code> and <code>python</code> where I implemented a <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network">generative adversarial network</a> to generate handwritten digits. I used a Deep Convolution GAN (DCGAN) with a Wasserstein loss function. <a href="https://github.com/e-hat/mnistgan">github</a> </li>
+                    <li><code>scramble</code> - A small program I wrote in <code>Go</code> that takes an english word and finds valid anagrams for it. <a href="https://github.com/e-hat/scramble">github</a></li>
+                    <li><code>tldr</code> - Another small <code>Go</code> program that looks up other command line tools and prints a description. <a href="https://github.com/e-hat/tldr">github</a></li>
+                </ul>
+            </p>
+            <code className="section-title">experience</code>
+            <p className="bio-text">
               <ul>
-                  <li>EFGL</li>
+                <li>Student developer, JumboCode. Fall 2020 - present.</li>
+                <li>Intern, Discover Technologies. April - August 2020.</li>
+                <li>Intern, Discover Technologies. May - August 2019.</li>
               </ul>
-          </p>
+            </p>
+            </div>
           </article>
       </section>
+      <footer>Copyright Eddie Hatfield © 2020</footer>
+      </div>
   );
 }
 
@@ -31,9 +61,9 @@ export default IndexPage
 
 export const query = graphql`
 query {
-    file(sourceInstanceName: {eq: "static"}, name: {eq: "prof_pic"}) {
+    file(sourceInstanceName: {eq: "static"}, name: {eq: "mountains"}) {
         childImageSharp {
-          fixed(width:220,height:220) {
+          fixed(width:1000,height:220) {
             ...GatsbyImageSharpFixed
           }
         }

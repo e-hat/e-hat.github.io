@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
 import "./404.css"
 
 class PageNotFound extends React.Component {
@@ -20,4 +19,4 @@ class PageNotFound extends React.Component {
     }
 }
 
-export default () => <Layout><PageNotFound /></Layout>
+export default () => PageNotFound

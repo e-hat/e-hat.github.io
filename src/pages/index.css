@@ -1,13 +1,105 @@
+html {
+    height: 100%;
+    overflow-y: scroll;
+    overscroll-behavior: none;
+}
+
+.rounded {
+    border-radius: 10px;
+}
+
+body {
+    font-family: Noto Sans JP, sans-serif;
+    color: white;
+    background-color: #202b38;
+    
+    min-height: 100%;
+    overscroll-behavior: none;
+    overflow: none;
+}
+
+#website {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.normalized-link {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 45%;
+    margin-right: 5%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+nav > * {
+    flex: 1;
+    margin: 0;
+    height: 100%;
+}
+
+
+header {
+    text-align: center;
+    width: 30%;
+}
+
+main {
+    width: 69%;
+    height: 100%;
+    margin: auto;
+}
+
+section {
+    padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+    #header-wrapper {
+        flex-direction: column;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    nav {
+        width: 90%;
+        margin: auto;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
 .profile {
-    width: 50%;
     margin: auto;
     text-align: center;
 }
 
+.text-section {
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+}
+
 .profile-title {
-    text-align: left;
     font-size: 3em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Noto Sans JP;
+    text-align: center;
 }
 
 .profile-title > h1 {
@@ -15,16 +107,21 @@
 }
 
 .section-title {
-    border-radius:6px;
-    background: #161f27;
-    padding: 2.5px 5px;
-    color: orange;
+    
     font-size: 1.5em;
     margin-top: 10;
     margin-bottom: 10;
 }
 
-.profile-pic {
+code {
+    border-radius:6px;
+    background: #161f27;
+    padding: 2.5px 5px;
+    color: orange;
+}
+
+.prof-pic {
+    text-align: center;
 }
 
 .bio-text {
@@ -44,9 +141,27 @@
 }
 
 ul {
-    text-align: left;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
 li {
     text-align: left;
+}
+
+a {
+    color: skyblue;
+}
+
+section {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    padding: 5px;
 }
