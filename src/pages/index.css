@@ -66,25 +66,6 @@ section {
     padding-bottom: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-    #header-wrapper {
-        flex-direction: column;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    nav {
-        width: 90%;
-        margin: auto;
-    }
-
-    main {
-        width: 100%;
-    }
-}
-
 .profile {
     margin: auto;
     text-align: center;
@@ -164,4 +145,23 @@ section {
 
 footer {
     padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .website {
+        width: 90%;
+        margin: auto;
+    }
+    .image {
+        display: none;
+    }
+    footer {
+        text-align: center;
+    }
+    .text-section {
+        width: 100%;
+    }
+    .section {
+        margin: auto;
+    }
 }

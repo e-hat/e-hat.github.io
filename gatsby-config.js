@@ -19,15 +19,5 @@ module.exports = {
         name: `static`
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Noto Sans JP`
-          }
-        ]
-      }
-    }
   ]
 }

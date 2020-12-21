@@ -8,7 +8,7 @@ import "./index.css"
 
 function IndexPage(props) {
   return (
-    <div>
+    <div className="website">
       <section>
           <article className="profile">
             <h1 className="profile-title">eddie hatfield</h1>
@@ -23,11 +23,11 @@ function IndexPage(props) {
             </div>
             <div className="text-section">
             <code className="section-title code">about</code>
-            <p className="bio-text">I'm Eddie Hatfield. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston⛄ for school.  </p>
+            <p className="bio-text">Hi, I'm Eddie. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston⛄ for school.  </p>
             <p className="bio-text">I enjoy playing ping pong🏓, playing video games🕹️, meditating 🧘‍♂️, obsessing over real-time rendering techniques🖥️, and learning more about all things programming.</p>
             <p className="bio-text"> I'm currently a sophomore at Tufts studying CompSci and Applied Math 🐘 and I'm a student developer on <a href="https://www.jumbocode.org/">JumboCode</a>, where we make hi-tech websites for non-profits.</p>
-            <code className="section-title">resume/contact</code>
-            <p className="bio-text">My resume can be found <a href={`eddiehatfield_resume.pdf`} download >here</a>. You can reach me at edward.hatfield at tufts dot edu and I'm <a href="https://github.com/e-hat" >e-hat</a> on Github🐙.</p>
+            <code className="section-title">resume/contact/presence</code>
+            <p className="bio-text">My resume can be found <a href={`eddiehatfield_resume.pdf`} download >here</a>. You can reach me at edward.hatfield at tufts dot edu and I'm <a href="https://github.com/e-hat" >e-hat</a> on Github🐙. Oh, and my linkedin is <a href="https://www.linkedin.com/in/eddie-hatfield-078a27160">right here</a> 🤝.</p>
             <code className="section-title">projects</code>
             <p className="bio-text">
                 Here are some of my favorite projects I've worked on over the years:
@@ -49,6 +49,11 @@ function IndexPage(props) {
                 <li>Intern, Discover Technologies. May - August 2019.</li>
               </ul>
             </p>
+            <code className="section-title">what I'm up to</code>
+            <p className="bio-text">Right now, I'm in the optimization phase of my clustered rendering implementation on my <code>efgl</code> project (see above). This means analyzing my hardware to figure out optimal thread counts and memory layouts for my compute shaders. </p>
+            <p className="bio-text">In the background, I'm watching lecture after lecture on PBR and reading through some papers to find a very modern approach to take. </p>
+            <p className="bio-text">In the background of the background 🤔 I'm reading through some <code>Vulkan</code> tutorials since, after <code>efgl</code> is finished I want to tackle making a highly performant GPU-driven renderer, hopefully with support for ray-tracing!🤩</p>
+            <p className="bio-text">So yes, with classes, it's a lot of stuff. But I'm loving every second of it!</p>
             </div>
           </article>
       </section>

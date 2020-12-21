@@ -3,20 +3,13 @@ import { Link } from "gatsby"
 
 import "./404.css"
 
-class PageNotFound extends React.Component {
-    render() {
-        return (
-            <div>
-            <section>
-                <h1>404 Error - Page Not Found</h1>
-                <article>
-                    The server can't find the page you were looking for. 
-                    Click{` `}<Link to="/" style={{color:`white`}}>here</Link>{` `}to go to the home page.
-                </article>
-            </section>
-            </div>
-        )
-    }
+function PageNotFound() {
+    return (
+        <div className="error-div">
+            <code className="error">404 error</code>
+            <p>Oops -- <Link to="/">back to safety!</Link></p>
+        </div>
+    );
 }
 
-export default () => PageNotFound
+export default PageNotFound
