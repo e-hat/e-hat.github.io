@@ -23,11 +23,11 @@ function IndexPage(props) {
             </div>
             <div className="text-section">
             <code className="section-title code">about</code>
-            <p className="bio-text">Hi, I'm Eddie. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston⛄ for school.  </p>
-            <p className="bio-text"> I'm currently a sophomore at Tufts studying CompSci and Applied Math 🐘 and I'm a student developer on <a href="https://www.jumbocode.org/">JumboCode</a>, where we make hi-tech websites for non-profits.</p>
+            <p className="bio-text">Hi, I'm Eddie. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston for school⛄  </p>
+            <p className="bio-text"> I'm currently a sophomore at Tufts 🐘 studying CompSci and Applied Math and I'm a student developer on <a href="https://www.jumbocode.org/">JumboCode</a>, where we make hi-tech websites for non-profits.</p>
             <p className="bio-text">I enjoy playing ping pong🏓, playing video games🕹️, meditating 🧘‍♂️, obsessing over real-time rendering techniques🖥️, and learning more about all things programming.</p>
             <code className="section-title">resume/contact/presence</code>
-            <p className="bio-text">My resume can be found <a href={`eddiehatfield_resume.pdf`} download >here</a>. You can reach me at edward.hatfield at tufts dot edu and I'm <a href="https://github.com/e-hat" >e-hat</a> on Github🐙. Oh, and my linkedin is <a href="https://www.linkedin.com/in/eddie-hatfield-078a27160">right here</a> 🤝.</p>
+            <p className="bio-text">My resume can be found <a href={`eddiehatfield_resume.pdf`} download >here</a>. You can reach me at edward.hatfield at tufts dot edu and I'm <a href="https://github.com/e-hat" >e-hat</a> on Github🐙. Oh, and my linkedin is <a href="https://www.linkedin.com/in/eddie-hatfield-078a27160">right here</a> 🤝</p>
             <code className="section-title">projects</code>
             <p className="bio-text">
                 Here are some of my favorite projects I've worked on over the years:
