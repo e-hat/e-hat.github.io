@@ -9,27 +9,57 @@
     </head>
     <body>
         <div id="main-content">
-            <header>
-                <u id="title">&nbsp;</u>
-            </header>
+            <a href="index.html" id="header-link">
+                <header>
+                    <u id="title">&nbsp;</u>
+                </header>
+            </a>
             <div id="subtitle"><i>programmer in boston/cincinnati</i></div>
             <main>
                 <section id="content">
-                    <figure id="prof-fig">
-                        <img src="img/headshot.jpg" 
-                             alt="A picture of me, Eddie"
-                             width="150px" height="auto"
-                             class="prof-pic">
-                        <figcaption id="prof-caption"><i>me, at Disney Land, circa 2017</i></figcaption>
-                    </figure>
-                    <div class="section-title"><u>about</u></div>
-                    <p>
-                        Hi, I'm Eddie. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston for school.
-                    </p>
-                    <p>
-                    I'm currently a sophomore at Tufts studying CS and I'll probably end up with at least a minor in Math. I'm also a developer on <a href="https://www.jumbocode.org/">JumboCode</a>, where we make hi-tech websites for non-profits.
-                    </p>
                     <article>
+                        <figure id="prof-fig">
+                            <img src="img/headshot.jpg" 
+                                 alt="A picture of me, Eddie"
+                                 width="150px" height="auto"
+                                               class="prof-pic">
+                            <figcaption id="prof-caption"><i>me, at Disney Land, circa 2017</i></figcaption>
+                        </figure>
+                        <div class="section-title"><u>about</u></div>
+                        <p>
+                        Hi, I'm Eddie. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston for school.
+                        </p>
+                        <p>
+                        I'm currently a sophomore at Tufts studying CS and I'll probably end up with at least a minor in Math. I'm also a developer on <a href="https://www.jumbocode.org/">JumboCode</a>, where we make hi-tech websites for non-profits.
+                        </p>
+                        <p>
+                        I love playing ping pong, playing piano, watching tv shows, and learning about space (if you couldn't tell). Programming-wise, I like computer graphics, functional programming, and making programming languages. I also like messing around with hardware sometimes. I also like web development. This list could go on for a while.
+                        </p>
+                        <p>
+                        Right now, I'm mainly working on writing a compiler for my programming language, <a href="https://github.com/e-hat/plume">plume</a>. I'll probably starting writing about that on this website soon enough. I'm also learning more about computer graphics and working on my <a href="https://github.com/e-hat/efgl">efgl</a> project, which is a real-time rendering engine. I really want PBR to get working, then I want to try a cool shadow algorithm like PCSS.
+                        </p>
+                        <p>
+                        I recently accepted an offer at <a href="https://www.stellarscience.com/">Stellar Science</a> as an intern for summer 2021, where I'll be writing tons of C++ and doing some cool science stuff.
+                        </p>
+                        <div class="section-title"><u>resume/contact/presence</u></div>
+                        <p>My resume can be found <a href="files/eddiehatfield_resume.pdf">here</a>. You can reach me at edward.hatfield[@]tufts[.]edu and I'm <a href="https://github.com/e-hat" >e-hat</a> on Github. Oh, and my linkedin is <a href="https://www.linkedin.com/in/eddie-hatfield-078a27160">right here</a> 🤝</p>
+                        <div class="section-title"><u>projects</u></div>
+                        <p>
+                        Here are some of my favorite projects I've worked on over the years:
+                        <ul>
+                            <li><u>efgl</u> - A rendering engine written in <u>OpenGL</u> and <u>C++</u> that implements a clustered-forward pipeline with GPU compute. At the moment, I'm adding support for PBR. <a href="https://github.com/e-hat/efgl" >github</a></li>
+                            <li><u>sga</u> - A genetic algorithm framework that I wrote in modern <u>C++</u>. It allows the user to define their own genotypes, evaluation functions, crossover functions, and mutation functions and handles the actual algorithm on its own. <a href="https://github.com/e-hat/SGA">github</a></li>
+                            <li><u>cycloid-animation</u> - One day, I was messing around on desmos with <a href="https://en.wikipedia.org/wiki/Cycloid" >cycloid</a> graphs and I made an animation out of them that you can find <a href="https://editor.p5js.org/deadbird/present/-1TmeUp-Q">here</a>. Note the slider on the left - it changes the level of detail that the animation is drawn with, and results in a practically infinite number of different, beautiful animations!</li>
+                            <li><u>onewknd</u> - My implementation of the <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html">ray-tracing in one weekend</a> tutorial (<a href="https://github.com/e-hat/onewknd">github</a>). I'm currently working on a <a href="https://github.com/e-hat/RayTracingOneWeekend-Haskell">rewrite in <u>Haskell</u></a> to flex my functional programming skills.</li>
+                            <li><u>mnist-gan</u> - One of my first forays into ML with <u>Tensorflow</u> and <u>python</u> where I implemented a <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network">generative adversarial network</a> to generate handwritten digits. I used a Deep Convolution GAN (DCGAN) with a Wasserstein loss function. <a href="https://github.com/e-hat/mnistgan">github</a> </li>
+                            <li><u>scramble</u> - A small program I wrote in <u>Go</u> that takes an english word and finds valid anagrams for it. <a href="https://github.com/e-hat/scramble">github</a></li>
+                            <li><u>tldr</u> - Another small <u>Go</u> program that looks up other command line tools and prints a description. <a href="https://github.com/e-hat/tldr">github</a></li>
+                        </ul>
+                        </p>
+                        <div class="section-title"><u>about this website</u></div>
+                        <p>
+                        I wanted to try my hand at making a retro-style website in static html, inspired by the early 2000s/late 90s. I also love the idea of having my website be somewhere I can be creative and express myself, so all the artwork you see is 100% made by me in GIMP (yes, even the glorious background). You can download any art here off my github, if you really want to.
+                        </p>
                     </article>
                 </section>
             </main>

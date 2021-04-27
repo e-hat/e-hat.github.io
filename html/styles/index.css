@@ -56,6 +56,28 @@ code {
 #content > p {
     text-align: justify;
 }
+
 #prof-caption {
     font-size: 0.75em;
 }
+
+#header-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+li {
+    text-align: left;
+}
+
+
