@@ -13,7 +13,7 @@ header {
 
 #subtitle {
     margin: 0px auto; 
-	padding-bottom: 30px;
+	padding-bottom: 20px;
     text-align: center;
     font-size: 1em;
 }
@@ -26,8 +26,6 @@ header {
     border: 5px solid white;
     padding: 48px;
 	text-align: center;
-    overflow: hidden;
-    position: relative;
 }
 
 .section-title {
@@ -81,5 +79,15 @@ li {
 }
 
 nav {
-    border-top: 2px dotted black;
+    border-top: 3px dotted black;
+    border-bottom: 3px dotted black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: inherit;
 }
