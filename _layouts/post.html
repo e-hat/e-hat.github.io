@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
-<div class="post-title"><u>{{ page.title }}</u></div>
+<div class="post-title">
+    {% if page.flair %}
+    <u>~{{ page.title }}~</u>
+    {% else %}
+    <u>{{ page.title }}</u>
+    {% endif %}
+</div>
 <div class="post-subtitle"><i>{{ page.author }},&nbsp;{{ page.date  | date_to_string }}</i></div>
 <div class="post-content">
     {{ content }}
