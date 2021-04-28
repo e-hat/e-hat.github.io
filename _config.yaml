@@ -24,3 +24,13 @@ post_dirs: false
 
 plugins:
   - jekyll-seo-tag
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      styles: ["post"]
+      author: "Eddie Hatfield"
