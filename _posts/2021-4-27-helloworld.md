@@ -131,9 +131,7 @@ I feel like 3 months ago, I was a completely different programmer, and I felt th
 three months ago about myself three months before that. I'm excited to see where this progression 
 takes me three months from now and I hope it never stops.
 
-To sign off, I'll leave a hello world Scala program because I want to break up this 
-big chunk of words with a pretty code block since I worked so hard on making it 
-look pretty.
+To sign off, here a little hello world program in Scala.
 
 ```scala
 object HelloWorld {
