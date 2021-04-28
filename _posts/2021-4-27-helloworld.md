@@ -15,7 +15,10 @@ Also, I like a lot of programming topics and so I am usually a beginner at somet
 so I'd like to jot down things that I wished I knew when I started learning
 a topic. 
 
-I'll sprinkle in some of my favorite code blocks from my projects to liven things up.
+I'll sprinkle in a "highlight reel" of code blocks from my projects throughout this 
+post to liven things up (and as a sort of preview). I might do this on all of my 
+text-based posts, since I don't like looking at a wall of (rambling) text. Just know that 
+they have no relevance to the topic of the post.
 
 ```cpp
 // Renderer.cpp
@@ -131,7 +134,7 @@ I feel like three months ago, I was a completely different programmer, and I fel
 three months ago about myself three months before that. I'm excited to see where this progression 
 takes me three months from now and I hope it never stops.
 
-To sign off, here a little hello world program in Scala.
+To sign off, here's a little hello world program in Scala.
 
 ```scala
 object HelloWorld {
