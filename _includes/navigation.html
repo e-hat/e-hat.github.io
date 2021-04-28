@@ -1,4 +1,20 @@
 <nav>
-    <a href="/" class="nav-link">{&nbsp;home&nbsp;}</a>
-    <a href="/" class="nav-link">{&nbsp;blog&nbsp;}</a>
+    <a href="/" class="nav-link">
+        {&nbsp;
+        {% if page.url == "/" %}
+        <u>home</u>
+        {% else %}
+        home
+        {% endif %}
+        &nbsp;}
+    </a>
+    <a href="/blogs" class="nav-link">
+        {&nbsp;
+        {% if page.url == "/blogs" %}
+        <u>blog</u>
+        {% else %}
+        blog
+        {% endif %}
+        &nbsp;}
+    </a>
 </nav>
