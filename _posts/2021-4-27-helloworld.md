@@ -124,7 +124,7 @@ Or maybe I'll write about this website. Or school/my job.
 ### Outro
 Maybe I'll be the only one that reads this, which is fine with me. Being a young software
 engineer in college can be pretty exhausting and disheartening at times, so I'm 
-excited to have a spot on the internet that documents my **development** as a **developer**.
+excited to have a spot on the internet that documents my *development as a developer*.
 There is so much looking ahead that, oftentimes, it is easy to forget how far you've come 
 (i.e. I just started applying for summer 2022 internships when summer 2021 hasn't started!!)
 I feel like three months ago, I was a completely different programmer, and I felt the same way
