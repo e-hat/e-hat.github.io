@@ -1,8 +1,6 @@
 ---
-layout: post
 slug: hello-world
 title: Hello world!
-author: Eddie Hatfield
 category: Miscellaneous
 ---
 
