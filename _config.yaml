@@ -11,4 +11,16 @@ github:
   repository_url: https://github.com/e-hat/e-hat/github.io
   branch: master
 
+markdown: kramdown
+kramdown:
+  html_to_native: true
+  syntax_highlighter: rouge
+  input: GFM
 
+highlighter: rouge
+
+permalink: '/blog/:title'
+post_dirs: false
+
+plugins:
+  - jekyll-seo-tag

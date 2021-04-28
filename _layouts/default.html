@@ -2,20 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/default.css">
-        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
         <script type="text/javascript" src="/assets/js/title_load.js"></script>
+        {% seo %}
     </head>
     <body>
         <div id="main-content">
-        <a href="{{ page.url }}" id="header-link">
+        <a href="/" id="header-link">
             <header>
                 <u id="title">&nbsp;</u>
-                <div id="secret-title" style="display:none">{{ page.header-title | downcase }}</div>
+                <div id="secret-title" style="display:none">eddie hatfield</div>
             </header>
         </a>
-        <div id="subtitle"><i>{{ page.subtitle | downcase }}</i></div>
+        <div id="subtitle"><i>programmer in boston/cincinnati</i></div>
         {% include navigation.html %}
         {{ content }}
         </div>

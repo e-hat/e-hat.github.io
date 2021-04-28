@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% seo %}
+        <link rel="stylesheet" href="/assets/css/default.css">
+        <link rel="stylesheet" href="/assets/css/post.css">
+        <link rel="stylesheet" href="/assets/css/syntax.css">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+    </head>
+    <body>
+        <div id="main-content">
+        {% include navigation.html %}
+            <div class="post-title"><u>{{ page.title }}</u></div>
+            <div class="post-subtitle"><i>{{ page.author }},&nbsp;{{ page.date  | date_to_string }}</i></div>
+        <div class="post-content">
+            {{ content }}
+        </div>
+        </div>
+    </body>
+</html>
+

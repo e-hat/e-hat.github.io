@@ -1,0 +1,31 @@
+.post-content {
+    text-align: left;
+    margin: auto;
+    padding-top: 5px;
+}
+
+.post-title {
+    padding-top: 25px;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+pre.highlight {
+    margin: 0;
+    background-color: inherit;
+}
+
+div.highlight {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+    display: block;
+    padding: 15px;
+    background-color: beige;
+    border: 2px dotted black;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.post-subtitle {
+    font-size: 0.85em;
+}

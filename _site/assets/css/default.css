@@ -34,14 +34,6 @@ header {
     margin-bottom: 10;
 }
 
-
-code {
-    border-radius:6px;
-    background: #161f27;
-    padding: 2.5px 5px;
-    color: orange;
-}
-
 .left-fig {
     float: left;
 }
@@ -64,9 +56,9 @@ figcaption {
     text-decoration: inherit;
 }
 
-ul {
+#project-list {
     display: block;
-    list-style-type: disc;
+    list-style-type: square;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -90,4 +82,8 @@ nav {
 .nav-link {
     color: inherit;
     text-decoration: inherit;
+}
+
+.nav-link:hover {
+    color: blue;
 }

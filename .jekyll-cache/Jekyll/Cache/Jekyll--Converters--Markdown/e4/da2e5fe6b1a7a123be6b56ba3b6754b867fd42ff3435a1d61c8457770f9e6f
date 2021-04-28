@@ -1,0 +1,23 @@
+I"<h2 id="welcome">Welcome</h2>
+
+<p>This is my first blog post, just to see how everything works. Blah blah, don’t mind me, I’m just some random text to see what it looks like when there is a good amount of text. Not a huge amount of text. Just a pretty average, normal amount of text that might come up when I’m writing a real blog post!</p>
+
+<p>Here’s some C++:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include &lt;iostream&gt;
+</span>
+<span class="k">auto</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">**</span> <span class="n">argv</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello world!"</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Here’s some Haskell:</p>
+<div class="language-haskell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">main</span> <span class="o">::</span> <span class="kt">IO</span> <span class="nb">()</span>
+<span class="n">main</span> <span class="o">=</span> <span class="n">putStrLn</span> <span class="s">"Hello world!"</span>
+</code></pre></div></div>
+
+<p>This is what a header looks like:</p>
+<h1 id="header">Header</h1>
+<h2 id="header-1">Header</h2>
+<h3 id="header-2">Header</h3>
+:ET
