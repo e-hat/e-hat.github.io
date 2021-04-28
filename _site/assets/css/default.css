@@ -3,19 +3,10 @@ body {
     font-family: Courier New;
 }
 
-header {
-    text-align: center;
-    margin: 0px auto;
-    padding-bottom: 12.5px;
-    font-size: 3em;
-	font-family: Courier New, sans-serif;
-}
-
-#subtitle {
-    margin: 0px auto; 
-	padding-bottom: 20px;
-    text-align: center;
-    font-size: 1em;
+.section-title {
+    font-size: 1.5em;
+    margin-top: 10;
+    margin-bottom: 10;
 }
 
 #main-content {
@@ -28,12 +19,6 @@ header {
 	text-align: center;
 }
 
-.section-title {
-    font-size: 1.5em;
-    margin-top: 10;
-    margin-bottom: 10;
-}
-
 .left-fig {
     float: left;
 }
@@ -41,7 +26,6 @@ header {
 figure > img {
     padding-bottom: 5px;
 }
-
 
 #content > p {
     text-align: justify;
