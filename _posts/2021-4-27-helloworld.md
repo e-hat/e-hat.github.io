@@ -9,10 +9,11 @@ category: Miscellaneous
 This is my inaugural blog post. On this blog, I plan to talk about how I solved
 certain programming problems that I have come across in my projects, discuss the
 architectures of some of my solutions, and maybe talk about other, off-computer 
-stuff. Mainly, I just love the idea of having my own corner of the internet. Also,
-I like a lot of programming topics and so I am usually a beginner at something,
-so I'd like to jot down things that I *wished* I knew when I started learning
-a topic. Hopefully that made sense. 
+stuff. Mainly, I just love the idea of having my own corner of the internet that is
+mine to do what I want with. 
+Also, I like a lot of programming topics and so I am usually a beginner at something,
+so I'd like to jot down things that I wished I knew when I started learning
+a topic.
 
 ### Plans
 I'll probably start with a series about Plume, the programming language I am 
@@ -42,7 +43,7 @@ To sign off, I'll leave a hello world Scala program because I want to break up t
 big chunk of words with a pretty code block.
 
 ```scala
-object Outro {
+object HelloWorld {
     def main(args: Array[String]) = {
         println("Hello world!")
     }
