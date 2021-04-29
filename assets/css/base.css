@@ -71,3 +71,8 @@ nav {
 .nav-link:hover {
     color: blue;
 }
+
+footer {
+    margin: auto;
+    font-size: 0.75em;
+}
