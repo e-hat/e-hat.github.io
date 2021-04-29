@@ -76,3 +76,24 @@ footer {
     margin: auto;
     font-size: 0.75em;
 }
+
+pre.highlight {
+    margin: 0;
+    background-color: inherit;
+}
+
+div.highlight {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+    display: block;
+    padding: 15px;
+    background-color: beige;
+    border: 2px dotted black;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+code.language-plaintext {
+    background: beige; 
+    padding: 1px;
+}
