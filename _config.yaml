@@ -25,6 +25,8 @@ post_dirs: false
 plugins:
   - jekyll-seo-tag
 
+google_analytics: 'G-2D119G58X3'
+
 defaults:
   -
     scope:

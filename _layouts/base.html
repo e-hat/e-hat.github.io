@@ -12,6 +12,9 @@
         <script type="text/javascript" src="/assets/js/{{ script }}.js"></script>
         {% endfor %}
         {% seo %}
+        {% if jekyll.environment == 'production' and site.google_analytics %}
+            {% include analytics.html %}
+        {% endif %}
     </head>
     <body>
         <div id="main-content">
