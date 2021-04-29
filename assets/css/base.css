@@ -16,7 +16,12 @@ body {
     border-radius: 10px;
     border: 5px solid white;
     padding: 48px;
+    padding-bottom: 20px;
 	text-align: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .left-fig {
@@ -73,8 +78,10 @@ nav {
 }
 
 footer {
-    margin: auto;
+    margin-top: 40px;
     font-size: 0.75em;
+    border-top: 1px solid black;
+    width: 100%;
 }
 
 pre.highlight {
@@ -96,4 +103,8 @@ div.highlight {
 code.language-plaintext {
     background: beige; 
     padding: 1px;
+}
+
+.webring-banner__header {
+    display: none;
 }

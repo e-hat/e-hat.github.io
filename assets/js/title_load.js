@@ -4,7 +4,6 @@ const deviation = 100;
 window.onload = () => {
     titleElem = document.getElementById('title');
     title = document.getElementById('secret-title').innerText;
-    console.log(title);
 
     const setTitleAtStep = (step) => () => {
         if (title[step] === ' ') {

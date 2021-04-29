@@ -6,7 +6,7 @@ styles: [blogs]
 <div id="blogs-header"><u>my blog posts</u></div>
 {% for category in site.categories %}
 <h3 class="category">{{ category[0] }}</h3>
-<ul class="category-list" style="list-style-type:square;">
+<ul class="category-list">
     {% for post in category[1] %}
     <li>
         <a href="{{ post.url }}" class="post-link">
@@ -17,4 +17,3 @@ styles: [blogs]
     {% endfor %}
 </ul>
 {% endfor %}
-</div>
