@@ -15,13 +15,12 @@ styles: [index]
 <main>
     <section id="content">
         <article>
-            <figure class="left-fig">
-                <img src="/assets/images/headshot.jpg" 
-                     alt="A picture of me, Eddie"
-                     width="150px" height="auto">
-                <figcaption><i>me, at Disney Land, circa 2017</i></figcaption>
-            </figure>
-            <div class="section-title"><u>about</u></div>
+            {% include left-image.html side="left" src="headshot.jpg" 
+                                       alt="A picture of me, Eddie"
+                                       width="150px" height="auto"
+                                       caption="me, at Disney Land, circa 2017"
+                                       %}
+            {% include section-title.html words="about" %}
             <p>
             Hi, I'm Eddie. I'm originally from Cincinnati, Ohio (aka "The Paris of the Midwest"), but I'm usually in Boston for school.
             </p>
@@ -37,9 +36,9 @@ styles: [index]
             <p>
             I recently accepted an offer at <a href="https://www.stellarscience.com/">Stellar Science</a> as an intern for summer 2021, where I'll be writing tons of C++ and doing some cool science stuff.
             </p>
-            <div class="section-title"><u>resume/contact/presence</u></div>
+            {% include section-title.html words="resume/contact/presence" %}
             <p>My resume can be found <a href="/assets/files/eddiehatfield_resume.pdf">here</a>. You can reach me at edward.hatfield[@]tufts[.]edu and I'm <a href="https://github.com/e-hat" >e-hat</a> on Github. Oh, and my linkedin is <a href="https://www.linkedin.com/in/eddie-hatfield-078a27160">right here</a> 🤝</p>
-            <div class="section-title"><u>projects</u></div>
+            {% include section-title.html words="projects" %}
             <p>
             Here are some of my favorite projects I've worked on over the years:
             <ul id="project-list">
@@ -53,7 +52,7 @@ styles: [index]
                     <li><u>tldr</u> - Another small <u>Go</u> program that looks up other command line tools and prints a description. <a href="https://github.com/e-hat/tldr">github</a></li>
             </ul>
             </p>
-            <div class="section-title"><u>about this website</u></div>
+            {% include section-title.html words="about this website" %}
             <p>
             The source code lives <a href="https://github.com/e-hat/e-hat.github.io">here</a>. 
             Check it out if you want to contribute or if you want my art (seriously??). 
