@@ -11,6 +11,9 @@
         {% for script in page.scripts %}
             <script type="text/javascript" src="/assets/js/{{ script }}.js"></script>
         {% endfor %}
+        {% if page.typeout_header %}
+            <script type="text/javascript" src="/assets/js/title_load.js"></script>
+        {% endif %}
         {% seo %}
         {% if jekyll.environment == 'production' and site.google_analytics %}
             {% include analytics.html %}
@@ -19,6 +22,14 @@
     <body>
         <div id="main-content">
             <div id="content-wrapper">
+            {% if page.typeout_header %}
+            <a href="{{page.url}}" id="header-link">
+                <header>
+                    <u id="title">&nbsp;</u>
+                    <div id="secret-title" style="display:none">{{ page.typeout_header }}</div>
+                </header>
+            </a>
+            {% endif %}
             {{ content }}
             </div>
             <footer>
