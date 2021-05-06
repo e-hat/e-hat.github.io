@@ -10,7 +10,13 @@ styles: [blogs]
     {% for post in category[1] %}
     <li>
         <a href="{{ post.url }}" class="post-link">
-            <div class="post-title">{{ post.title }}</div>
+            <div class="post-title">
+                {% if post.series %}
+                Chapter&nbsp;{{ post.chapter }}:&nbsp;{{ post.title }}
+                {% else %}
+                {{ post.title }}
+                {% endif %}
+            </div>
             <div class="post-date"><i>{{ post.date | date_to_string }}</i></div>
         </a>
     </li>
