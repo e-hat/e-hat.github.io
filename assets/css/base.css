@@ -45,20 +45,6 @@ figcaption {
     text-decoration: inherit;
 }
 
-#project-list {
-    display: block;
-    list-style-type: square;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-li {
-    text-align: left;
-}
-
 nav {
     border-top: 3px dotted black;
     border-bottom: 3px dotted black;
@@ -102,7 +88,7 @@ div.highlight {
 
 code.language-plaintext {
     background: beige; 
-    padding: 1px;
+    padding: 1px 3px;
 }
 
 .webring-banner__header {

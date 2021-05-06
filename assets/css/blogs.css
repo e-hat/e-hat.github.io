@@ -13,7 +13,7 @@
     list-style-type: square;
     margin: auto;
     margin-top: 10px;
-    width: 85%;
+    width: 90%;
     padding-left: 0px;
     padding-bottom: 15px;
 }
@@ -21,7 +21,7 @@
 .category-list > li {
     border-bottom: 2px dotted black;
     width: 80%;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .category-list > li:hover {

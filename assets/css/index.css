@@ -12,3 +12,12 @@ header {
     font-size: 3em;
 	font-family: Courier New, sans-serif;
 }
+
+li {
+    text-align: left;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}

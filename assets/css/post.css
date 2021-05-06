@@ -1,15 +1,19 @@
 .post-content {
     text-align: left;
     margin: auto;
-    padding-top: 5px;
 }
 
 .post-title {
     padding-top: 25px;
     font-size: 2em;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .post-subtitle {
     font-size: 0.85em;
+}
+
+.chapter-title {
+    text-align: left;
+    padding-top: 10px;    
 }
