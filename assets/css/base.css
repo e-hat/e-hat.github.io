@@ -94,3 +94,11 @@ code.language-plaintext {
 .webring-banner__header {
     display: none;
 }
+
+.footnotes {
+    font-size: 0.75em;
+}
+
+.footnote {
+    font-size: 0.75em;
+}
