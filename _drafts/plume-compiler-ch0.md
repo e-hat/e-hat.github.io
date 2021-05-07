@@ -1,9 +1,10 @@
 ---
-title: "Chapter 0: Introduction"
+title: Overview
 slug: plume-compiler-ch0
+series: true
+chapter: 0
 category: Writing Plume's Compiler
 ---
-# Welcome
 ## Introduction
 In this series I'll be going over how I implemented each step of the compilation
 process for my custom programming language, Plume, which targets x86-64 assembly. 
@@ -15,7 +16,10 @@ This post will go over the general stages of the compiler I am writing, such as
 their inputs and outputs and what invariants they establish. There's a good chance 
 that other posts in the series will require working knowledge of Haskell/functional 
 programming, but I think this chapter will be a high level overview that 
-doesn't go into that much of detail.
+doesn't go into that level of detail. 
+
+For the other posts in the series, it will be helpful to have at least read 
+[LYAH](http://learnyouahaskell.com/).
 
 The source code for the compiler lives [here](https://github.com/e-hat/plume) in
 case you want to follow along, as I may be shouting out some source files.
@@ -43,6 +47,8 @@ into individual "tokens," based on the keywords and such of my language. In this
 lexing allows Plume code to have arbitrary amounts of whitespace, much like C++
 or Java. These tokens are pretty much the words of the programming language.
 
+Here's a (hopefully) illuminating example of how a line of Plume gets "lexed":
+
 ```python
 Int n := 5
 ```
@@ -56,4 +62,14 @@ Int
     n   :=    
 5
 ```
+Spoiler: I don't find lexing nearly as interesting as the rest of the compiler.
+
+### Parser 
+The parser takes in a stream of tokens and outputs an Abstract Syntax Tree (AST). 
+
+While the output of lexing is somewhat convenient to work with, there's no "structure"
+to the data. All you get is a list of strings. The parser takes this list of strings 
+and does one of two things:
+
+1. Decides which category of Plume statement 
 
