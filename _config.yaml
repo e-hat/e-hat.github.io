@@ -1,14 +1,14 @@
-title: Eddie Hatfield
-name: Eddie Hatfield's Site
-author: Eddie Hatfield
-author_nickname: Eddie Hatfield
-email: edward.hatfield@tufts.edu
+title: Yash Gaitonde
+name: Yash Gaitonde's Site
+author: Yash Gaitonde
+author_nickname: Yash Gaitonde
+email: gaitonde@umich.edu
 description: ""
 baseurl: ""
-url: "https://eddiehatfield.com"
+url: "https://yashgaitonde.com"
 
 github:
-  repository_url: https://github.com/e-hat/e-hat/github.io
+  repository_url: https://github.com/ygaitonde/ygaitonde.github.io
   branch: master
 
 markdown: kramdown
@@ -35,4 +35,4 @@ defaults:
     values:
       layout: "post"
       styles: ["post"]
-      author: "Eddie Hatfield"
+      author: "Yash Gaitonde"
