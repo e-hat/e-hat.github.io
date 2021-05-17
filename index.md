@@ -9,14 +9,16 @@ typeout_header: "yash gaitonde"
 {% include navigation.html %}
 {% include floated-image.html width="50px" side="left" src="headshot.jpeg"
     alt="A picture of Yash"
-        width="150px" height="auto"
-        caption="chilling in Marin County"
-        %}
+    width="50px" height="auto"
+    caption="chilling in Marin County"
+%}
 {% include section-title.html words="about" %}
 
 Hi, I'm Yash! I'm from Cincinnati, Ohio and I'm a student at the University of Michigan.
 
 I took a leave of absence last year and worked as a software engineer at [Jupiter (YC S19)](https://jupiter.co). I worked across [our stack](TODO), and among other things built a shoppable recipes marketplace that turned into a core feature and a mobile app that was adopted by >80% of our customers.
+
+&nbsp;
 
 I also took advantage of my time away from school to travel, and spent time living in San Francisco, Maine, and Miami.
 
