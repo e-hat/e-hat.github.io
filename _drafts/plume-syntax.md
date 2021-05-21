@@ -37,17 +37,23 @@ In Plume, there are statements. Each statement is either a *declaration* or an
 *expression*. A declaration is something that does not return a value. An expression 
 does return a value. 
 
+An important note for all of the examples below is that the Plume 
+lexer does not care about whitespace. This means that anywhere you see whitespace 
+(and some places you don't) could be a couple spaces or 20 newlines (but please don't).
+This is all to say that the whitespace and styling choices I make in these examples 
+are how I like to write Plume, but they are not by any means required. 
+
 ### Types, Identifiers, and Comments
 In Plume, types are a *capital* letter followed by zero or more alpha-numeric characters.
 
-The definition for what constitutes an identifier are specified by Parsec, the parsing 
-library I'm using. I'll put that link here when I have internet EDDIE DON'T FORGET TO 
-LINK THIS.
+The definition for what constitutes an identifier are [specified by Parsec](https://hackage.haskell.org/package/parsec-3.1.14.0/docs/Text-Parsec-Token.html), the parsing 
+library I'm using. Those rules say that an identifier can start with a letter or a '\_' 
+and it can contain an alpha-numeric character or a '\_'.
 
 Single-line comments are started with `#`. Multi-line comments work just like how 
 they work in C-style languages: `/* [comment content] */`. 
 
-These will be useful to know for the later definitions.
+These will be useful to know for the later definitions and examples.
 
 ### Declarations
 Here's a comprehensive list of declarations, taken straight from [the source code](https://github.com/e-hat/plume) 
@@ -118,6 +124,8 @@ else => [Declaration]
 Of course, the `else if` and `else` blocks are optional. Note that the expressions 
 used here must return a boolean result, or else you'll get a cheerful type error.
 
+Also note that parentheses around the condition expression are unnecessary.
+
 ### Expressions
 Expressions are statements that return values. You'll see that there is usually 
 an analogous declaration for each expression, so you've already read about most 
@@ -181,5 +189,63 @@ def somethingUseful(Int a): Void := {
 Hopefully you can think of something more useful to do with your Plume code. 
 
 #### <u>If Expressions</u>
+These are analogous to If Declarations, but they are a little different. They are 
+also one of my favorite parts about writing Plume. They take the following form:
+```
+if [Expression] => [Expression] 
+else if [Expression] => [Expression]
+...
+else => [Expression]
+```
+The important difference here between If Declarations and If Expressions is that
+If Expressions *require* an `else` block. This will make sense after the following example:
+```python
+# note: this is one of my favorite pieces of code to write in Plume
+def factorial(Int n): Int := 
+    if n = 1 => 1
+    else     => n * factorial(n - 1)
+```
+What would it mean if this didn't have the `else` block? If `n != 1`, then 
+who knows what would happen. So you need your `else`'s.
+
+Of course, this means the following fun syntax is possible: 
+
+```python 
+Int answer := 
+    if conditionFunc() and otherConditionFunc() => 42
+    else => -1 
+```
+Anyways, those are If Expressions, aka my favorite part of Plume. 
+
+
+#### <u>Boolean Expressions</u>
+This is similar to how they work in Python. Use `and`, `or`, and `not` for operators
+and `true` and `false` for literal values.
+
+#### <u>Arithmetic Expressions</u>
+This is pretty straightforward. Here's an example: `Int a := 1 + 2 / 3 * 4`. Let's 
+move on.
+
+#### <u>Relational Expressions</u>
+These are practically the same as any other language, but here we use `=` instead of `==`. 
+
+## Odds & ends 
+This section is currently only dedicated to the `yield` keyword, which is hilarious and sad.
+You use `yield` in a truly idiomatic and clean way (sarcasm): when, on one line, you have an 
+arithmetic expression followed by a negation expression on the next line. It's a sad 
+fact of the Plume parser that this is unavoidable (it probably is totally avoidable though).
+The parser will think the negation expression is a subtraction from the arithmetic expression 
+on the line above.
+
+I think it's kind of charming.
+
+## Outro
+This is definitely incomplete and I'll be adding to it incrementally, but it works for now. 
+LMK if you have special things that you want me to explain here. My email: edward[dot]hatfield[at]tufts[dot]edu.
+Or just make an issue on [the website's github](https://github.com/e-hat/e-hat.github.io). 
+
+Or, if you *really* want to 
+learn how something works, check out [the source code](https://github.com/e-hat/plume).
+
 
 [^1]: <https://blog.reverberate.org/2013/08/parsing-c-is-literally-undecidable.html>
