@@ -33,8 +33,8 @@ computer graphics and working on my [efgl](https://github.com/e-hat/efgl)
 project, which is a real-time rendering engine. I really want to get PBR working,
 then I want to try a cool shadow algorithm like PCSS. I'll post some images of my renders here. 
 
-I recently accepted an offer at [Stellar Science](https://www.stellarscience.com/)
- as an intern for summer 2021, where I'll be writing tons of C++ and doing some cool science stuff.
+I am currently an intern at [Stellar Science](https://www.stellarscience.com/),
+where I write C++ and do fun science stuff.
 
 {% include section-title.html words="resume/contact/presence" %}
 My resume can be found [here](/assets/files/eddiehatfield_resume.pdf).
