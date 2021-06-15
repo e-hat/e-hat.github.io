@@ -5,9 +5,10 @@ styles: [blogs]
 ---
 <div id="blogs-header"><u>my blog posts</u></div>
 {% for category in site.categories %}
+{% assign posts = category[1] | sort: 'date' %}
 <h3 class="category">{{ category[0] }}</h3>
 <ul class="category-list">
-    {% for post in category[1] %}
+    {% for post in posts %}
     <li>
         <a href="{{ post.url }}" class="post-link">
             <div class="post-title">
