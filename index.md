@@ -34,7 +34,8 @@ project, which is a real-time rendering engine. I really want to get PBR working
 then I want to try a cool shadow algorithm like PCSS. I'll post some images of my renders here. 
 
 I am currently an intern at [Stellar Science](https://www.stellarscience.com/),
-where I write C++ and do fun science stuff.
+where I write C++ and do fun science stuff. I'll also mention that any opinions 
+that I express here are not that of my employer. 
 
 {% include section-title.html words="resume/contact/presence" %}
 My resume can be found [here](/assets/files/eddiehatfield_resume.pdf).
