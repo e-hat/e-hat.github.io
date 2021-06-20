@@ -26,7 +26,7 @@ case you want to follow along, as I may be citing some source files.
 
 *Disclaimer: Both this article and I are works in progress. I will improve these articles as I learn 
 more, but don't take them as pure fact. They simply are the steps I figured out 
-to writing my own simple one.*
+to writing my own simple compiler.*
 
 ## Overview of Stages
 
