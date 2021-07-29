@@ -24,7 +24,7 @@ I love playing ping pong, playing piano, watching tv shows, playing video games,
 and learning about space (if you couldn't tell). Some of my favorite shows are 
 BoJack Horseman, Curb Your Enthusiasm, and anything in the Breaking Bad universe. 
 
-I have somewhat broad technical interests. In general, I like solving problems that don't 
+I have somewhat broad technical interests. In general, I like solving engineering problems that don't 
 have easy "yes/no" answers. I think I could be interested in anything that checks that box. 
 This has manifested itself in projects with computer graphics, compilers, 
 reverse-engineering, and machine learning.
