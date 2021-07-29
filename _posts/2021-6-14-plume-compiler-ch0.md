@@ -3,7 +3,7 @@ title: Overview
 slug: plume-compiler-ch0
 series: true
 chapter: 0
-category: Writing Plume's Compiler
+category: "Road to x86-64: Writing Plume's Compiler"
 ---
 ## Introduction
 In this series I'll be going over how I implemented each step of the compilation
