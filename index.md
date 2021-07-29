@@ -21,17 +21,17 @@ least a minor in Math. I'm also a developer on [JumboCode](https://www.jumbocode
 where we make hi-tech websites for non-profits.
 
 I love playing ping pong, playing piano, watching tv shows, playing video games,
-and learning about space (if you couldn't tell). Programming-wise, I like computer graphics, 
-functional programming, and making programming languages. 
-I also like messing around with hardware sometimes. I also like web development. 
-This list could go on for a while.
+and learning about space (if you couldn't tell). Some of my favorite shows are 
+BoJack Horseman, Curb Your Enthusiasm, and anything in the Breaking Bad universe. 
 
-Right now, I'm mainly working on writing a compiler for my programming language, 
-[plume](https://github.com/e-hat/plume). I'll probably starting 
-writing about that on this website soon enough. I'm also learning more about 
-computer graphics and working on my [efgl](https://github.com/e-hat/efgl)
-project, which is a real-time rendering engine. I really want to get PBR working,
-then I want to try a cool shadow algorithm like PCSS. I'll post some images of my renders here. 
+I have somewhat broad technical interests. In general, I like solving problems that don't 
+have easy "yes/no" answers. I think I could be interested in anything that checks that box. 
+This has manifested itself in projects with computer graphics, compilers, 
+reverse-engineering, and machine learning.
+
+I am also dedicated to mastering the tools I use every day as a software engineer. 
+These include vim, git, zsh, tmux, Ubuntu, Visual Studio, Firefox, DuckDuckGo, and the keyboard 
+I'm typing this on. If you ever find a trick you think I'd like, please send it my way.
 
 I am currently an intern at [Stellar Science](https://www.stellarscience.com/),
 where I write C++ and do fun science stuff. I'll also mention that any opinions 
@@ -47,8 +47,8 @@ on Github. Oh, and my linkedin is [right here](https://www.linkedin.com/in/eddie
 Here are some of my favorite projects I've worked on over the years:
 
 * **plume** - A C-level programming language that compiles to x86-64 assembly.
-  I am currently writing its compiler in Haskell. I'll write about it on this website,
-but I'll just mention quickly that it has a fun syntax for low-level programming. 
+  I am currently writing its compiler in Haskell. It has a strong static type
+  system and a terse, clear syntax. I've written about it [here](/blogs)
 [github](https://github.com/e-hat/plume)
 * **efgl** - A rendering engine written in OpenGL and C++ that 
 implements a clustered-forward pipeline with GPU compute. At the moment, 
