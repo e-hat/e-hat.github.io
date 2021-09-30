@@ -33,9 +33,8 @@ I am also dedicated to mastering the tools I use every day as a software enginee
 These include vim, git, zsh, tmux, Ubuntu, Visual Studio, Firefox, DuckDuckGo, and the keyboard 
 I'm typing this on. If you ever find a trick you think I'd like, please send it my way.
 
-I am currently an intern at [Stellar Science](https://www.stellarscience.com/),
-where I write C++ and do fun science stuff. I'll also mention that any opinions 
-that I express here are not that of my employer. 
+This Spring, I'll be interning as a Software Engineer at [Shoreline.io](https://shoreline.io). 
+I'll also mention that any opinions that I express here do not reflect those of my employer. 
 
 {% include section-title.html words="resume/contact/presence" %}
 My resume can be found [here](/assets/files/eddiehatfield_resume.pdf).
