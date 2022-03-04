@@ -2,7 +2,7 @@
 slug: software-update-1
 title: Software Update
 flair: true 
-category: Miscellaneous 
+category: Software 
 ---
 ## Hello There
 Hey people, or person. Not sure how many people read this. This is the first of 
