@@ -1,6 +1,6 @@
 body {
     background-image: url("../images/background.png");
-    font-family: Courier New;
+    font-family: JetBrains Mono;
 }
 
 .section-title {
@@ -11,6 +11,7 @@ body {
 
 #main-content {
     width: 50%;
+    max-width: 1200px;
     margin: 48px auto;
 	background: url("../images/craters.png") repeat #f4e987;
     border-radius: 10px;
