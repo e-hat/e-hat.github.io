@@ -1,7 +1,7 @@
 ---
 title: Plume Syntax Reference
 slug: plume-syntax
-category: Miscellaneous
+category: Software
 ---
 ## Philosophy
 
@@ -229,15 +229,30 @@ move on.
 #### <u>Relational Expressions</u>
 These are practically the same as any other language, but here we use `=` instead of `==`. 
 
-## Odds & ends 
-This section is currently only dedicated to the `yield` keyword, which is hilarious and sad.
-You use `yield` in a truly idiomatic and clean way (sarcasm): when, on one line, you have an 
-arithmetic expression followed by a negation expression on the next line. It's a sad 
-fact of the Plume parser that this is unavoidable (it probably is totally avoidable though).
-The parser will think the negation expression is a subtraction from the arithmetic expression 
-on the line above.
+## `yield` keyword meme
+The parser ain't perfect, as sometimes plume can't tell whether the next line is a part of the current expression. 
+That's where the stupid `yield` keyword enters the picture.
 
-I think it's kind of charming.
+```python
+def main(): Int := {
+  Int a := 5
+  -4 # you would think this returns -4...
+}
+```
+This code *should* return `-4`. However, Plume reads this as 
+```python 
+def main(): Int := {
+  Int a := 5 - 4
+}
+```
+which is an error, because this function no longer returns anything. In this obscure case, 
+use the `yield` keyword as follows:
+```python 
+def main(): Int := {
+  Int a := 5 
+  yield -4
+}
+```
 
 ## Outro
 This is definitely incomplete and I'll be adding to it incrementally, but it works for now. 
