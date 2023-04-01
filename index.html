@@ -2,16 +2,141 @@
 title: Eddie's Website
 styles: [index]
 ---
+<!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
+        <style>
+body {
+    margin: 0;
+}
+
+main {
+    position: absolute;
+    z-index: 0;
+    color: white;
+    background-image: url("assets/images/wood4.png");
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+section {
+    margin: auto;
+    max-width: 1000px;
+}
+
+#darkness {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    -webkit-mask-composite: destination-in;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.spotlighted {
+    display: inline-block;
+}
+
+.bio {
+    font-size: 1.5em;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    float: right;
+    max-width: 800px;
+}
+
+.shadowed {
+    box-shadow: 10px 10px black;
+}
+
+.headshot {
+    float: left;
+}
+        </style>
+        <script>
+            const positionSpotlights = () => {
+                let maskCss = 
+                    ([...document.getElementsByClassName("spotlighted")]
+                    .map((e) => e.getBoundingClientRect())
+                    .map((rect) => {
+                        const size = Math.max(0, Math.max(rect.width, rect.height));
+                        const x = rect.x + rect.width / 2;
+                        const y = rect.y + rect.height / 2;
+
+                        return { x, y, size };
+                    }))
+                    .map(({x, y, size}) => 
+                        `radial-gradient( circle ${size}px at ${x}px ${y}px, transparent 0, black 100% )`)
+                    .join(",");
+
+                console.log(maskCss);
+
+                let darkness = document.getElementById("darkness");
+                darkness.style.webkitMask = maskCss;
+                darkness.style.webkitMaskComposite = "destination-in";
+                darkness.style.maskComposite = "exclude";
+            };
+
+            window.onload = () => {
+                positionSpotlights();
+            };
+
+            window.addEventListener("resize", () => {
+                console.log("resize!");
+                positionSpotlights();
+            });
+        </script>
     </head>
     <body>
-        <h1>
-        Hello World
-        </h1>
+        <main class="content">
+            <header class="spotlighted">
+                <h1>Welcome to my website!</h1>
+            </header>
+            <section>
+                <div>
+                    <div class="spotlighted">
+                        <img src="assets/images/headshot.jpg"
+                        alt="a picture of a man smiling"
+                        class="shadowed headshot"
+                        width="300px">
+                    </div>
+                    <div class="shadowed spotlighted bio">
+                        <p>
+                        Hey, I’m Eddie. I like programming, video games, tennis, nature, dogs, music, tv shows, linux, and math. I also like learning about and being in nature.
+                        </p>
 
-        <div class="box">
+                        <p>
+Sometimes I write stuff on this blog that people probably don’t read.
+                        </p>
+
+                        <p>
+IRL I am a CS student at Tufts in my fourth-year.
+about this website
+        </p>
+
+        <p>
+I made all of the terrible art you see on this webstie and I’m more proud of it than anything else.
+        </p>
+
+        <p>
+The source code lives here. Check it out if you want to contribute or if you want my art (seriously?).
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div id="darkness">
         </div>
     </body>
 </html>
