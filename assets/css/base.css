@@ -1,0 +1,120 @@
+html, body {
+  height: 100%;
+}
+
+body {
+    background-image: url("../images/creek.jpg");
+    font-family: JetBrains Mono;
+    margin: 0px;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-top: 10;
+    margin-bottom: 10;
+}
+
+#main-content {
+    max-width: 800px;
+    height: 100%;
+
+    background: #82c981;
+    opacity: 0.95;
+
+    margin: 0px auto;
+    padding: 0px 60px;
+
+	  text-align: center;
+    font-size: 1.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+  text-decoration: underline;
+  font-size: 2.5em;
+}
+
+figure > img {
+    margin-bottom: 5px;
+    box-shadow: 7px 7px;
+}
+
+#content > p {
+    text-align: justify;
+}
+
+figcaption {
+    font-size: 0.75em;
+}
+
+#header-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+nav {
+    border-top: 3px dotted black;
+    border-bottom: 3px dotted black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+footer {
+    font-size: 0.75em;
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+pre.highlight {
+    margin: 0;
+    background-color: inherit;
+}
+
+div.highlight {
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
+    display: block;
+    padding: 15px;
+    background-color: beige;
+    border: 2px dotted black;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+code.language-plaintext {
+    background: beige; 
+    padding: 1px 3px;
+}
+
+.webring-banner__header {
+    display: none;
+}
+
+.footnotes {
+    font-size: 0.75em;
+}
+
+.footnote {
+    font-size: 0.75em;
+}
+
+ul {
+  max-width: 70%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
